@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "349709736353",
+    "firebase_url": "https://aftermath-30412-default-rtdb.firebaseio.com",
+    "project_id": "aftermath-30412",
+    "storage_bucket": "aftermath-30412.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349709736353:android:8d7856ec6488c6e5fb13e0",
+        "android_client_info": {
+          "package_name": "com.example.aftermath"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349709736353-vvd83a4n1d51s3qt97uc4qq5od2nj6gv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ-vK9yvO49zzedrRtI2c7NpgehzEjGjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "349709736353-vvd83a4n1d51s3qt97uc4qq5od2nj6gv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "349709736353-9e0b52ajpisbc2n5kocn8pg60el53t1v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.aftermath"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
