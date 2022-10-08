@@ -1,13 +1,18 @@
+import 'package:aftermath/fragments/mapPage.dart';
+import 'package:aftermath/navigationDrawer/navigationDrawer.dart';
+import 'package:aftermath/routes/pageRoutes.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/widgets.dart';
 import 'package:firebase_database/firebase_database.dart';
+
+import 'fragments/agendaPage.dart';
+import 'fragments/notificationPage.dart';
 
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
@@ -23,19 +28,24 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+          primaryColor: Colors.deepPurple
+      ),
       title: 'AfterMath',
       home: Scaffold(
+        drawer: navigationDrawer(),
         appBar: AppBar(
-            title: const Text('Savremena matematike i njene primene')
+          backgroundColor: Colors.deepPurple,
+            title: const Text('AfterMath')
         ),
         body: FutureBuilder(
             future: _fbApp,
             builder: (context, snapshot) {
               if(snapshot.hasError) {
                 print('Ovde ima greske ${snapshot.error.toString()}');
-                return Text("Nesto nije uredu");
+                return const Text("Nesto nije uredu");
               } else if(snapshot.hasData){
-                return MyStatefulWidget();
+                return const MyStatefulWidget();
               } else {
                 return const Center(
                   child: CircularProgressIndicator(),
@@ -44,6 +54,12 @@ class _MyAppState extends State<MyApp> {
             }
         ),
       ) ,
+      routes: {
+        pageRoutes.home: (context) => MyApp(),
+        pageRoutes.agenda: (context) => agendaPage(),
+        pageRoutes.map: (context) => mapPage(),
+        pageRoutes.notification: (context) => notificationPage(),
+      },
     );
   }
 }
