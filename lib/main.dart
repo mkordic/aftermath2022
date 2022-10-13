@@ -1,11 +1,18 @@
 import 'package:aftermath/fragments/mapPage.dart';
 import 'package:aftermath/navigationDrawer/navigationDrawer.dart';
 import 'package:aftermath/routes/pageRoutes.dart';
+import 'package:aftermath/routes/agendaPagesRoutes.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
 
+
 import 'fragments/agendaPage.dart';
+import 'fragments/agendaPages/dan1.dart';
+import 'fragments/agendaPages/dan2.dart';
+import 'fragments/agendaPages/dan3.dart';
+import 'fragments/agendaPages/dan4.dart';
+import 'fragments/agendaPages/dan5.dart';
 import 'fragments/notificationPage.dart';
 
 
@@ -43,7 +50,7 @@ class _MyAppState extends State<MyApp> {
             builder: (context, snapshot) {
               if(snapshot.hasError) {
                 print('Ovde ima greske ${snapshot.error.toString()}');
-                return const Text("Nesto nije uredu");
+                return const Text("Nesto nije u redu");
               } else if(snapshot.hasData){
                 return const MyStatefulWidget();
               } else {
@@ -59,6 +66,11 @@ class _MyAppState extends State<MyApp> {
         pageRoutes.agenda: (context) => agendaPage(),
         pageRoutes.map: (context) => mapPage(),
         pageRoutes.notification: (context) => notificationPage(),
+        agendaPagesRoutes.prvi: (context) => dan1(),
+        agendaPagesRoutes.drugi: (context) => dan2(),
+        agendaPagesRoutes.treci: (context) => dan3(),
+        agendaPagesRoutes.cetvrti: (context) => dan4(),
+        agendaPagesRoutes.peti: (context) => dan5(),
       },
     );
   }

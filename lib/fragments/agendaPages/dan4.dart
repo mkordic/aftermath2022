@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import '../navigationDrawer/navigationDrawer.dart';
-import '../routes/agendaPagesRoutes.dart';
+import '../../navigationDrawer/navigationDrawer.dart';
+import '../../routes/agendaPagesRoutes.dart';
 
-class agendaPage extends StatelessWidget {
-  static const String routeName = '/agendPage';
+class dan4 extends StatelessWidget {
+  static const String routeName = '/dan4';
 
-  const agendaPage({super.key});
+  const dan4({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -111,7 +111,6 @@ class agendaPage extends StatelessWidget {
                               textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900),
                             ),
                             onPressed: () {
-                              print("drugi");
                               Navigator.pushReplacementNamed(context, agendaPagesRoutes.treci);
                             },
                             child: const Text('28/10'),
@@ -197,11 +196,11 @@ class agendaPage extends StatelessWidget {
               ),
               SizedBox(height: 30),
               Container(
-                child: Text('DAN 1', style: TextStyle(fontSize: 40, fontWeight: FontWeight.w600, color: Colors.deepPurpleAccent)),
+                child: Text('DAN 4', style: TextStyle(fontSize: 40, fontWeight: FontWeight.w600, color: Colors.deepPurpleAccent)),
               ),
               SizedBox(height: 30),
               Container(
-                  margin: EdgeInsets.all(10),
+                margin: EdgeInsets.all(10),
                 // child: Padding(
                 //   padding: const EdgeInsets.all(20),
                 child: Table(
@@ -221,10 +220,10 @@ class agendaPage extends StatelessWidget {
                   children: [
                     TableRow( children: [
                       Column(children:[Text('10:00-11:00', style: TextStyle(fontSize: 20.0))],),
-                       Column(children:[Text('Put', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Put', style: TextStyle(fontSize: 20.0))]),
                     ],
-                        decoration: BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
-                            borderRadius: BorderRadius.all(Radius.circular(7))),
+                      decoration: BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
+                          borderRadius: BorderRadius.all(Radius.circular(7))),
 
                     ),
                     TableRow( children: [
