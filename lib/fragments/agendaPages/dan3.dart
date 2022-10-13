@@ -7,6 +7,16 @@ class dan3 extends StatelessWidget {
 
   const dan3({super.key});
 
+  static const rowSpacer=TableRow(
+      children: [
+        SizedBox(
+          height: 5,
+        ),
+        SizedBox(
+          height: 5,
+        )
+      ]);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -220,13 +230,14 @@ class dan3 extends StatelessWidget {
                   //     ),
                   children: [
                     TableRow( children: [
-                      Column(children:[Text('08:00-11:00', style: TextStyle(fontSize: 20.0))],),
+                      Column(children:[Text('08:00-10:00', style: TextStyle(fontSize: 20.0))],),
                       Column(children:[Text('Doručak', style: TextStyle(fontSize: 20.0))]),
                     ],
                       decoration: BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
 
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('10:00-10:45', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Naučno predavanje', style: TextStyle(fontSize: 20.0))]),
@@ -234,6 +245,7 @@ class dan3 extends StatelessWidget {
                       decoration: BoxDecoration(color: Color.fromRGBO(217, 131, 166, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('10:45-11:00', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Pauza', style: TextStyle(fontSize: 20.0))]),
@@ -241,6 +253,7 @@ class dan3 extends StatelessWidget {
                       decoration: BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('11:00-11:45', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Naučno predavanje', style: TextStyle(fontSize: 20.0))]),
@@ -249,6 +262,7 @@ class dan3 extends StatelessWidget {
                       BoxDecoration(color: Color.fromRGBO(217, 131, 166, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('11:45-12:00', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Slobodno vreme', style: TextStyle(fontSize: 20.0))]),
@@ -256,6 +270,7 @@ class dan3 extends StatelessWidget {
                       decoration: BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('12:00-13:00', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Simulacija intervjua', style: TextStyle(fontSize: 20.0))]),
@@ -264,6 +279,7 @@ class dan3 extends StatelessWidget {
                       BoxDecoration(color: Color.fromRGBO(217, 71, 115, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('13:00-15:00', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Ručak i simulacija intervjua', style: TextStyle(fontSize: 20.0))]),
@@ -271,6 +287,7 @@ class dan3 extends StatelessWidget {
                       decoration:  BoxDecoration(color: Color.fromRGBO(217, 131, 166, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('15:00-16:00', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Slobodno vreme', style: TextStyle(fontSize: 20.0))]),
@@ -279,6 +296,7 @@ class dan3 extends StatelessWidget {
                       BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('16:00-16:45', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Predavanje kompanije', style: TextStyle(fontSize: 20.0))]),
@@ -286,6 +304,7 @@ class dan3 extends StatelessWidget {
                       decoration: BoxDecoration(color: Color.fromRGBO(219, 148, 190, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('16:45-17:00', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Pauza', style: TextStyle(fontSize: 20.0))]),
@@ -293,6 +312,7 @@ class dan3 extends StatelessWidget {
                       decoration: BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('17:00-17:45', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Predavanje kompanije', style: TextStyle(fontSize: 20.0))]),
@@ -300,6 +320,7 @@ class dan3 extends StatelessWidget {
                       decoration: BoxDecoration(color: Color.fromRGBO(219, 148, 190, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('17:45-19:00', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Slobodno vreme', style: TextStyle(fontSize: 20.0))]),
@@ -307,6 +328,7 @@ class dan3 extends StatelessWidget {
                       decoration: BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('19:00-20:30', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Večera', style: TextStyle(fontSize: 20.0))]),
@@ -314,6 +336,7 @@ class dan3 extends StatelessWidget {
                       decoration: BoxDecoration(color: Color.fromRGBO(217, 131, 166, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('21:00-00:00', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Zabavni program', style: TextStyle(fontSize: 20.0))]),

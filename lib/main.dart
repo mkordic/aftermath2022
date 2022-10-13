@@ -5,7 +5,7 @@ import 'package:aftermath/routes/agendaPagesRoutes.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 
 import 'fragments/agendaPage.dart';
 import 'fragments/agendaPages/dan1.dart';
@@ -36,14 +36,26 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-          primaryColor: Colors.deepPurple
+          primaryColor: Colors.deepPurple,
+          textTheme: GoogleFonts.crimsonTextTextTheme(
+              Theme.of(context).textTheme
+          )
       ),
       title: 'AfterMath',
       home: Scaffold(
         drawer: navigationDrawer(),
         appBar: AppBar(
           backgroundColor: Colors.deepPurple,
-            title: const Text('AfterMath')
+          //title: const Text('AfterMath'),
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage('assets/images/6.png'),
+                    fit: BoxFit.fill
+                )
+            ),
+          ),
+          //title: Image.asset('assets/images/6.png',fit: BoxFit.cover),
         ),
         body: FutureBuilder(
             future: _fbApp,
@@ -90,19 +102,19 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   final database = FirebaseDatabase.instance.ref();
   // final announcementRef = FirebaseDatabase.instance.ref("https://aftermath-a85bf-default-rtdb.europe-west1.firebasedatabase.app/announcements");
   String _announcement = 'Announcement goes here';
-    @override
-    void initState() {
-      super.initState();
-      _activateListeners();
-    }
-    void _activateListeners(){
-      database.child("announcements/prvo/text").onValue.listen((event) {
-        final description = event.snapshot.value;
-        setState(() {
-          _announcement = description.toString();
-        });
+  @override
+  void initState() {
+    super.initState();
+    _activateListeners();
+  }
+  void _activateListeners(){
+    database.child("announcements/prvo/text").onValue.listen((event) {
+      final description = event.snapshot.value;
+      setState(() {
+        _announcement = description.toString();
       });
-    }
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -114,7 +126,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       controller: pageControler,
       children: <Widget>[
         Center(
-          child: Text(_announcement)
+            child: Text(_announcement)
         ),
         const Center(
           child: Text("second page"),

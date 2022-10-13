@@ -7,6 +7,16 @@ class agendaPage extends StatelessWidget {
 
   const agendaPage({super.key});
 
+  static const rowSpacer=TableRow(
+      children: [
+        SizedBox(
+          height: 8,
+        ),
+        SizedBox(
+          height: 8,
+        )
+      ]);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -227,6 +237,7 @@ class agendaPage extends StatelessWidget {
                             borderRadius: BorderRadius.all(Radius.circular(7))),
 
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('10:00-11:00', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Raspoređivanje po sobama', style: TextStyle(fontSize: 20.0))]),
@@ -234,6 +245,7 @@ class agendaPage extends StatelessWidget {
                       decoration: BoxDecoration(color: Color.fromRGBO(217, 131, 166, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('10:00-11:00', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Ručak', style: TextStyle(fontSize: 20.0))]),
@@ -241,6 +253,7 @@ class agendaPage extends StatelessWidget {
                       decoration: BoxDecoration(color: Color.fromRGBO(219, 148, 190, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('10:00-11:00', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Slobodno vreme', style: TextStyle(fontSize: 20.0))]),
@@ -249,6 +262,7 @@ class agendaPage extends StatelessWidget {
                           BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('10:00-11:00', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Svečano otvaranje', style: TextStyle(fontSize: 20.0))]),
@@ -256,6 +270,7 @@ class agendaPage extends StatelessWidget {
                       decoration: BoxDecoration(color: Color.fromRGBO(217, 71, 115, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('10:00-11:00', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Pauza', style: TextStyle(fontSize: 20.0))]),
@@ -264,6 +279,7 @@ class agendaPage extends StatelessWidget {
                       BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('10:00-11:00', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Predavanje kompanije', style: TextStyle(fontSize: 20.0))]),
@@ -271,6 +287,7 @@ class agendaPage extends StatelessWidget {
                       decoration:  BoxDecoration(color: Color.fromRGBO(217, 71, 115, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('10:00-11:00', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Slobodno vreme', style: TextStyle(fontSize: 20.0))]),
@@ -279,6 +296,7 @@ class agendaPage extends StatelessWidget {
                           BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('10:00-11:00', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Večera', style: TextStyle(fontSize: 20.0))]),
@@ -286,6 +304,7 @@ class agendaPage extends StatelessWidget {
                       decoration: BoxDecoration(color: Color.fromRGBO(219, 148, 190, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('10:00-11:00', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Zabavni program', style: TextStyle(fontSize: 20.0))]),

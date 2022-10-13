@@ -7,6 +7,16 @@ class dan5 extends StatelessWidget {
 
   const dan5({super.key});
 
+  static const rowSpacer=TableRow(
+      children: [
+        SizedBox(
+          height: 8,
+        ),
+        SizedBox(
+          height: 8,
+        )
+      ]);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -220,20 +230,22 @@ class dan5 extends StatelessWidget {
                   //     ),
                   children: [
                     TableRow( children: [
-                      Column(children:[Text('08:00-11:00', style: TextStyle(fontSize: 20.0))],),
+                      Column(children:[Text('08:00-10:00', style: TextStyle(fontSize: 20.0))],),
                       Column(children:[Text('Doručak', style: TextStyle(fontSize: 20.0))]),
                     ],
                       decoration: BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
 
                     ),
+                    rowSpacer,
                     TableRow( children: [
-                      Column(children:[Text('10:00-10:45', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('10:00-11:00', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Izlazak iz soba', style: TextStyle(fontSize: 20.0))]),
                     ],
                       decoration: BoxDecoration(color: Color.fromRGBO(217, 131, 166, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('11:00-16:00', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Slobodno vreme: Palić/Segedin', style: TextStyle(fontSize: 17.0))]),
@@ -241,6 +253,7 @@ class dan5 extends StatelessWidget {
                       decoration: BoxDecoration(color: Color.fromRGBO(217, 71, 115, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
+                    rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('16:00-18:30', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Dolazak kući', style: TextStyle(fontSize: 20.0))]),
