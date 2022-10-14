@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 import '../../navigationDrawer/navigationDrawer.dart';
 import '../../routes/agendaPagesRoutes.dart';
 
-class dan5 extends StatelessWidget {
-  static const String routeName = '/dan5';
+class day4 extends StatelessWidget {
+  static const String routeName = '/day4';
 
-  const dan5({super.key});
+  const day4({super.key});
 
   static const rowSpacer=TableRow(
       children: [
         SizedBox(
-          height: 8,
+          height: 5,
         ),
         SizedBox(
-          height: 8,
+          height: 5,
         )
       ]);
 
@@ -54,7 +54,7 @@ class dan5 extends StatelessWidget {
                               textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900),
                             ),
                             onPressed: () {
-                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.prvi);
+                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.first);
                             },
                             child: const Text('26/10'),
                           ),
@@ -88,7 +88,7 @@ class dan5 extends StatelessWidget {
                               textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900),
                             ),
                             onPressed: () {
-                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.drugi);
+                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.second);
                             },
                             child: const Text('27/10'),
                           ),
@@ -121,8 +121,7 @@ class dan5 extends StatelessWidget {
                               textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900),
                             ),
                             onPressed: () {
-                              print("drugi");
-                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.treci);
+                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.third);
                             },
                             child: const Text('28/10'),
                           ),
@@ -155,7 +154,7 @@ class dan5 extends StatelessWidget {
                               textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900),
                             ),
                             onPressed: () {
-                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.cetvrti);
+                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.fourth);
                             },
                             child: const Text('29/10'),
                           ),
@@ -189,7 +188,7 @@ class dan5 extends StatelessWidget {
 
                             ),
                             onPressed: () {
-                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.peti);
+                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.fifth);
                             },
                             child: const Text('30/10'),
                           ),
@@ -207,7 +206,7 @@ class dan5 extends StatelessWidget {
               ),
               SizedBox(height: 30),
               Container(
-                child: Text('DAN 5', style: TextStyle(fontSize: 40, fontWeight: FontWeight.w600, color: Colors.deepPurpleAccent)),
+                child: Text('DAN 4', style: TextStyle(fontSize: 40, fontWeight: FontWeight.w600, color: Colors.deepPurpleAccent)),
               ),
               SizedBox(height: 30),
               Container(
@@ -240,25 +239,107 @@ class dan5 extends StatelessWidget {
                     rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('10:00-11:00', style: TextStyle(fontSize: 20.0))]),
-                      Column(children:[Text('Izlazak iz soba', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Slobodno vreme', style: TextStyle(fontSize: 20.0))]),
                     ],
                       decoration: BoxDecoration(color: Color.fromRGBO(217, 131, 166, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
                     rowSpacer,
                     TableRow( children: [
-                      Column(children:[Text('11:00-16:00', style: TextStyle(fontSize: 20.0))]),
-                      Column(children:[Text('Slobodno vreme: Palić/Segedin', style: TextStyle(fontSize: 17.0))]),
+                      Column(children:[Text('11:00-11:45', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Predavanje kompanije', style: TextStyle(fontSize: 20.0))]),
+                    ],
+                      decoration: BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
+                          borderRadius: BorderRadius.all(Radius.circular(7))),
+                    ),
+                    rowSpacer,
+                    TableRow( children: [
+                      Column(children:[Text('11:45-12:00', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Pauza', style: TextStyle(fontSize: 20.0))]),
+                    ],
+                      decoration: //BoxDecoration(color: Color.fromRGBO(223, 176, 211, 1),
+                      BoxDecoration(color: Color.fromRGBO(217, 131, 166, 1),
+                          borderRadius: BorderRadius.all(Radius.circular(7))),
+                    ),
+                    rowSpacer,
+                    TableRow( children: [
+                      Column(children:[Text('12:00-12:45', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Predavanje kompanije', style: TextStyle(fontSize: 20.0))]),
+                    ],
+                      decoration: BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
+                          borderRadius: BorderRadius.all(Radius.circular(7))),
+                    ),
+                    rowSpacer,
+                    TableRow( children: [
+                      Column(children:[Text('12:45-13:00', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Slobodno vreme', style: TextStyle(fontSize: 20.0))]),
                     ],
                       decoration: BoxDecoration(color: Color.fromRGBO(217, 71, 115, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
                     rowSpacer,
                     TableRow( children: [
-                      Column(children:[Text('16:00-18:30', style: TextStyle(fontSize: 20.0))]),
-                      Column(children:[Text('Dolazak kući', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('13:00-15:00', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Ručak i simulacija intervjua', style: TextStyle(fontSize: 20.0))]),
                     ],
-                      decoration:  BoxDecoration(color: Color.fromRGBO(219, 148, 190, 1),
+                      decoration:  BoxDecoration(color: Color.fromRGBO(217, 131, 166, 1),
+                          borderRadius: BorderRadius.all(Radius.circular(7))),
+                    ),
+                    rowSpacer,
+                    TableRow( children: [
+                      Column(children:[Text('15:00-16:00', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Simulacija intervjua', style: TextStyle(fontSize: 20.0))]),
+                    ],
+                      decoration: //BoxDecoration(color: Color.fromRGBO(217, 131, 166, 1),
+                      BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
+                          borderRadius: BorderRadius.all(Radius.circular(7))),
+                    ),
+                    rowSpacer,
+                    TableRow( children: [
+                      Column(children:[Text('16:00-17:00', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Slobodno vreme', style: TextStyle(fontSize: 20.0))]),
+                    ],
+                      decoration: BoxDecoration(color: Color.fromRGBO(219, 148, 190, 1),
+                          borderRadius: BorderRadius.all(Radius.circular(7))),
+                    ),
+                    rowSpacer,
+                    TableRow( children: [
+                      Column(children:[Text('17:00-18:00', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Company circle', style: TextStyle(fontSize: 20.0))]),
+                    ],
+                      decoration: BoxDecoration(color: Color.fromRGBO(217, 71, 115, 1),
+                          borderRadius: BorderRadius.all(Radius.circular(7))),
+                    ),
+                    rowSpacer,
+                    TableRow( children: [
+                      Column(children:[Text('18:00-18:15', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Pauza', style: TextStyle(fontSize: 20.0))]),
+                    ],
+                      decoration:  BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
+                          borderRadius: BorderRadius.all(Radius.circular(7))),
+                    ),
+                    rowSpacer,
+                    TableRow( children: [
+                      Column(children:[Text('18:15-19:00', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Svecano zatvaranje', style: TextStyle(fontSize: 20.0))]),
+                    ],
+                      decoration: BoxDecoration(color: Color.fromRGBO(219, 148, 190, 1),
+                          borderRadius: BorderRadius.all(Radius.circular(7))),
+                    ),
+                    rowSpacer,
+                    TableRow( children: [
+                      Column(children:[Text('19:00-20:30', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Vecera', style: TextStyle(fontSize: 20.0))]),
+                    ],
+                      decoration: BoxDecoration(color: Color.fromRGBO(219, 148, 190, 1),
+                          borderRadius: BorderRadius.all(Radius.circular(7))),
+                    ),
+                    rowSpacer,
+                    TableRow( children: [
+                      Column(children:[Text('21:00-00:00', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Zurka u klubu', style: TextStyle(fontSize: 20.0))]),
+                    ],
+                      decoration: BoxDecoration(color: Color.fromRGBO(219, 148, 190, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     )
                   ],

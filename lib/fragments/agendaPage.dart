@@ -54,7 +54,7 @@ class agendaPage extends StatelessWidget {
                               textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900),
                             ),
                             onPressed: () {
-                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.prvi);
+                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.first);
                             },
                             child: const Text('26/10'),
                           ),
@@ -88,7 +88,7 @@ class agendaPage extends StatelessWidget {
                               textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900),
                             ),
                             onPressed: () {
-                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.drugi);
+                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.second);
                             },
                             child: const Text('27/10'),
                           ),
@@ -121,8 +121,7 @@ class agendaPage extends StatelessWidget {
                               textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900),
                             ),
                             onPressed: () {
-                              print("drugi");
-                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.treci);
+                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.third);
                             },
                             child: const Text('28/10'),
                           ),
@@ -155,7 +154,7 @@ class agendaPage extends StatelessWidget {
                               textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900),
                             ),
                             onPressed: () {
-                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.cetvrti);
+                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.fourth);
                             },
                             child: const Text('29/10'),
                           ),
@@ -189,7 +188,7 @@ class agendaPage extends StatelessWidget {
 
                             ),
                             onPressed: () {
-                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.peti);
+                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.fifth);
                             },
                             child: const Text('30/10'),
                           ),

@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import '../../navigationDrawer/navigationDrawer.dart';
 import '../../routes/agendaPagesRoutes.dart';
 
-class dan2 extends StatelessWidget {
-  static const String routeName = '/agendaPages/dan2';
+class day3 extends StatelessWidget {
+  static const String routeName = '/day3';
 
-  const dan2({super.key});
+  const day3({super.key});
 
   static const rowSpacer=TableRow(
       children: [
@@ -54,7 +54,7 @@ class dan2 extends StatelessWidget {
                               textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900),
                             ),
                             onPressed: () {
-                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.prvi);
+                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.first);
                             },
                             child: const Text('26/10'),
                           ),
@@ -88,7 +88,7 @@ class dan2 extends StatelessWidget {
                               textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900),
                             ),
                             onPressed: () {
-                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.drugi);
+                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.second);
                             },
                             child: const Text('27/10'),
                           ),
@@ -121,8 +121,7 @@ class dan2 extends StatelessWidget {
                               textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900),
                             ),
                             onPressed: () {
-                              print("drugi");
-                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.treci);
+                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.third);
                             },
                             child: const Text('28/10'),
                           ),
@@ -155,7 +154,7 @@ class dan2 extends StatelessWidget {
                               textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900),
                             ),
                             onPressed: () {
-                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.cetvrti);
+                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.fourth);
                             },
                             child: const Text('29/10'),
                           ),
@@ -189,7 +188,7 @@ class dan2 extends StatelessWidget {
 
                             ),
                             onPressed: () {
-                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.peti);
+                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.fifth);
                             },
                             child: const Text('30/10'),
                           ),
@@ -207,7 +206,7 @@ class dan2 extends StatelessWidget {
               ),
               SizedBox(height: 30),
               Container(
-                child: Text('DAN 2', style: TextStyle(fontSize: 40, fontWeight: FontWeight.w600, color: Colors.deepPurpleAccent)),
+                child: Text('DAN 3', style: TextStyle(fontSize: 40, fontWeight: FontWeight.w600, color: Colors.deepPurpleAccent)),
               ),
               SizedBox(height: 30),
               Container(

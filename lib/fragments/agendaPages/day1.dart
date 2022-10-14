@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 import '../../navigationDrawer/navigationDrawer.dart';
 import '../../routes/agendaPagesRoutes.dart';
 
-class dan4 extends StatelessWidget {
-  static const String routeName = '/dan4';
+class day1 extends StatelessWidget {
+  static const String routeName = '/day1';
 
-  const dan4({super.key});
+  const day1({super.key});
 
   static const rowSpacer=TableRow(
       children: [
         SizedBox(
-          height: 5,
+          height: 8,
         ),
         SizedBox(
-          height: 5,
+          height: 8,
         )
       ]);
 
@@ -54,7 +54,7 @@ class dan4 extends StatelessWidget {
                               textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900),
                             ),
                             onPressed: () {
-                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.prvi);
+                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.first);
                             },
                             child: const Text('26/10'),
                           ),
@@ -88,7 +88,7 @@ class dan4 extends StatelessWidget {
                               textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900),
                             ),
                             onPressed: () {
-                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.drugi);
+                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.second);
                             },
                             child: const Text('27/10'),
                           ),
@@ -121,7 +121,7 @@ class dan4 extends StatelessWidget {
                               textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900),
                             ),
                             onPressed: () {
-                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.treci);
+                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.third);
                             },
                             child: const Text('28/10'),
                           ),
@@ -154,7 +154,7 @@ class dan4 extends StatelessWidget {
                               textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900),
                             ),
                             onPressed: () {
-                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.cetvrti);
+                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.fourth);
                             },
                             child: const Text('29/10'),
                           ),
@@ -188,7 +188,7 @@ class dan4 extends StatelessWidget {
 
                             ),
                             onPressed: () {
-                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.peti);
+                              Navigator.pushReplacementNamed(context, agendaPagesRoutes.fifth);
                             },
                             child: const Text('30/10'),
                           ),
@@ -206,7 +206,7 @@ class dan4 extends StatelessWidget {
               ),
               SizedBox(height: 30),
               Container(
-                child: Text('DAN 4', style: TextStyle(fontSize: 40, fontWeight: FontWeight.w600, color: Colors.deepPurpleAccent)),
+                child: Text('DAN 1', style: TextStyle(fontSize: 40, fontWeight: FontWeight.w600, color: Colors.deepPurpleAccent)),
               ),
               SizedBox(height: 30),
               Container(
@@ -229,8 +229,8 @@ class dan4 extends StatelessWidget {
                   //     ),
                   children: [
                     TableRow( children: [
-                      Column(children:[Text('08:00-10:00', style: TextStyle(fontSize: 20.0))],),
-                      Column(children:[Text('Doručak', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('08:30-11:30', style: TextStyle(fontSize: 20.0))],),
+                      Column(children:[Text('Put', style: TextStyle(fontSize: 20.0))]),
                     ],
                       decoration: BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
@@ -238,57 +238,58 @@ class dan4 extends StatelessWidget {
                     ),
                     rowSpacer,
                     TableRow( children: [
-                      Column(children:[Text('10:00-11:00', style: TextStyle(fontSize: 20.0))]),
-                      Column(children:[Text('Slobodno vreme', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('11:30-13:00', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Raspoređivanje po sobama', style: TextStyle(fontSize: 20.0))]),
                     ],
                       decoration: BoxDecoration(color: Color.fromRGBO(217, 131, 166, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
                     rowSpacer,
                     TableRow( children: [
-                      Column(children:[Text('11:00-11:45', style: TextStyle(fontSize: 20.0))]),
-                      Column(children:[Text('Predavanje kompanije', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('13:00-14:30', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Ručak', style: TextStyle(fontSize: 20.0))]),
                     ],
-                      decoration: BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
+                      decoration: BoxDecoration(color: Color.fromRGBO(219, 148, 190, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
                     rowSpacer,
                     TableRow( children: [
-                      Column(children:[Text('11:45-12:00', style: TextStyle(fontSize: 20.0))]),
-                      Column(children:[Text('Pauza', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('14:30-15:00', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Slobodno vreme', style: TextStyle(fontSize: 20.0))]),
                     ],
                       decoration: //BoxDecoration(color: Color.fromRGBO(223, 176, 211, 1),
-                      BoxDecoration(color: Color.fromRGBO(217, 131, 166, 1),
+                      BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
                     rowSpacer,
                     TableRow( children: [
-                      Column(children:[Text('12:00-12:45', style: TextStyle(fontSize: 20.0))]),
-                      Column(children:[Text('Predavanje kompanije', style: TextStyle(fontSize: 20.0))]),
-                    ],
-                      decoration: BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
-                          borderRadius: BorderRadius.all(Radius.circular(7))),
-                    ),
-                    rowSpacer,
-                    TableRow( children: [
-                      Column(children:[Text('12:45-13:00', style: TextStyle(fontSize: 20.0))]),
-                      Column(children:[Text('Slobodno vreme', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('15:00-15:45', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Svečano otvaranje', style: TextStyle(fontSize: 20.0))]),
                     ],
                       decoration: BoxDecoration(color: Color.fromRGBO(217, 71, 115, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
                     rowSpacer,
                     TableRow( children: [
-                      Column(children:[Text('13:00-15:00', style: TextStyle(fontSize: 20.0))]),
-                      Column(children:[Text('Ručak i simulacija intervjua', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('15:45-16:00', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Pauza', style: TextStyle(fontSize: 20.0))]),
                     ],
-                      decoration:  BoxDecoration(color: Color.fromRGBO(217, 131, 166, 1),
+                      decoration: //BoxDecoration(color: Color.fromRGBO(228, 208, 237, 1),
+                      BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
                     rowSpacer,
                     TableRow( children: [
-                      Column(children:[Text('15:00-16:00', style: TextStyle(fontSize: 20.0))]),
-                      Column(children:[Text('Simulacija intervjua', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('16:00-16:45', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Predavanje kompanije', style: TextStyle(fontSize: 20.0))]),
+                    ],
+                      decoration:  BoxDecoration(color: Color.fromRGBO(217, 71, 115, 1),
+                          borderRadius: BorderRadius.all(Radius.circular(7))),
+                    ),
+                    rowSpacer,
+                    TableRow( children: [
+                      Column(children:[Text('16:45-17:00', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Pauza', style: TextStyle(fontSize: 20.0))]),
                     ],
                       decoration: //BoxDecoration(color: Color.fromRGBO(217, 131, 166, 1),
                       BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
@@ -296,7 +297,15 @@ class dan4 extends StatelessWidget {
                     ),
                     rowSpacer,
                     TableRow( children: [
-                      Column(children:[Text('16:00-17:00', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('17:00-17:45', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Naucno predavanje', style: TextStyle(fontSize: 20.0))]),
+                    ],
+                      decoration: BoxDecoration(color: Color.fromRGBO(219, 148, 190, 1),
+                          borderRadius: BorderRadius.all(Radius.circular(7))),
+                    ),
+                    rowSpacer,
+                    TableRow( children: [
+                      Column(children:[Text('17:45-19:00', style: TextStyle(fontSize: 20.0))]),
                       Column(children:[Text('Slobodno vreme', style: TextStyle(fontSize: 20.0))]),
                     ],
                       decoration: BoxDecoration(color: Color.fromRGBO(219, 148, 190, 1),
@@ -304,32 +313,8 @@ class dan4 extends StatelessWidget {
                     ),
                     rowSpacer,
                     TableRow( children: [
-                      Column(children:[Text('17:00-18:00', style: TextStyle(fontSize: 20.0))]),
-                      Column(children:[Text('Company circle', style: TextStyle(fontSize: 20.0))]),
-                    ],
-                      decoration: BoxDecoration(color: Color.fromRGBO(217, 71, 115, 1),
-                          borderRadius: BorderRadius.all(Radius.circular(7))),
-                    ),
-                    rowSpacer,
-                    TableRow( children: [
-                      Column(children:[Text('18:00-18:15', style: TextStyle(fontSize: 20.0))]),
-                      Column(children:[Text('Pauza', style: TextStyle(fontSize: 20.0))]),
-                    ],
-                      decoration:  BoxDecoration(color: Color.fromRGBO(250, 200, 201, 1),
-                          borderRadius: BorderRadius.all(Radius.circular(7))),
-                    ),
-                    rowSpacer,
-                    TableRow( children: [
-                      Column(children:[Text('18:15-19:00', style: TextStyle(fontSize: 20.0))]),
-                      Column(children:[Text('Svecano zatvaranje', style: TextStyle(fontSize: 20.0))]),
-                    ],
-                      decoration: BoxDecoration(color: Color.fromRGBO(219, 148, 190, 1),
-                          borderRadius: BorderRadius.all(Radius.circular(7))),
-                    ),
-                    rowSpacer,
-                    TableRow( children: [
                       Column(children:[Text('19:00-20:30', style: TextStyle(fontSize: 20.0))]),
-                      Column(children:[Text('Vecera', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Večera', style: TextStyle(fontSize: 20.0))]),
                     ],
                       decoration: BoxDecoration(color: Color.fromRGBO(219, 148, 190, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
@@ -337,9 +322,9 @@ class dan4 extends StatelessWidget {
                     rowSpacer,
                     TableRow( children: [
                       Column(children:[Text('21:00-00:00', style: TextStyle(fontSize: 20.0))]),
-                      Column(children:[Text('Zurka u klubu', style: TextStyle(fontSize: 20.0))]),
+                      Column(children:[Text('Zabavni program', style: TextStyle(fontSize: 20.0))]),
                     ],
-                      decoration: BoxDecoration(color: Color.fromRGBO(219, 148, 190, 1),
+                      decoration: BoxDecoration(color: Color.fromRGBO(217, 131, 166, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     )
                   ],

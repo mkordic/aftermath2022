@@ -8,11 +8,11 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'fragments/agendaPage.dart';
-import 'fragments/agendaPages/dan1.dart';
-import 'fragments/agendaPages/dan2.dart';
-import 'fragments/agendaPages/dan3.dart';
-import 'fragments/agendaPages/dan4.dart';
-import 'fragments/agendaPages/dan5.dart';
+import 'fragments/agendaPages/day1.dart';
+import 'fragments/agendaPages/day2.dart';
+import 'fragments/agendaPages/day3.dart';
+import 'fragments/agendaPages/day4.dart';
+import 'fragments/agendaPages/day5.dart';
 import 'fragments/notificationPage.dart';
 
 
@@ -78,11 +78,11 @@ class _MyAppState extends State<MyApp> {
         pageRoutes.agenda: (context) => agendaPage(),
         pageRoutes.map: (context) => mapPage(),
         pageRoutes.notification: (context) => notificationPage(),
-        agendaPagesRoutes.prvi: (context) => dan1(),
-        agendaPagesRoutes.drugi: (context) => dan2(),
-        agendaPagesRoutes.treci: (context) => dan3(),
-        agendaPagesRoutes.cetvrti: (context) => dan4(),
-        agendaPagesRoutes.peti: (context) => dan5(),
+        agendaPagesRoutes.first: (context) => day1(),
+        agendaPagesRoutes.second: (context) => day2(),
+        agendaPagesRoutes.third: (context) => day3(),
+        agendaPagesRoutes.fourth: (context) => day4(),
+        agendaPagesRoutes.fifth: (context) => day5(),
       },
     );
   }
