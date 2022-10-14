@@ -46,15 +46,7 @@ class _MyAppState extends State<MyApp> {
         drawer: navigationDrawer(),
         appBar: AppBar(
           backgroundColor: Colors.deepPurple,
-          //title: const Text('AfterMath'),
-          flexibleSpace: Container(
-            decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage('assets/images/6.png'),
-                    fit: BoxFit.fill
-                )
-            ),
-          ),
+          title: const Text('AfterMath'),
           //title: Image.asset('assets/images/6.png',fit: BoxFit.cover),
         ),
         body: FutureBuilder(
@@ -108,7 +100,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     _activateListeners();
   }
   void _activateListeners(){
-    database.child("announcements/prvo/text").onValue.listen((event) {
+    database.child("announcements/1/text").onValue.listen((event) {
       final description = event.snapshot.value;
       setState(() {
         _announcement = description.toString();
