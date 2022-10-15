@@ -36,7 +36,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-          primaryColor: Colors.deepPurple,
+          primaryColor: Colors.purple,
           textTheme: GoogleFonts.crimsonTextTextTheme(
               Theme.of(context).textTheme
           )
@@ -45,7 +45,7 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
         drawer: navigationDrawer(),
         appBar: AppBar(
-          backgroundColor: Colors.deepPurple,
+          backgroundColor: Colors.purple.shade300,
           title: const Text('AfterMath'),
           //title: Image.asset('assets/images/6.png',fit: BoxFit.cover),
         ),

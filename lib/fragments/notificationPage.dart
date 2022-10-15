@@ -151,10 +151,14 @@ class _notificationPageState extends State<notificationPage> {
     return Scaffold(
         appBar: AppBar(
           title: const Text("Notifications"),
+            backgroundColor: Colors.purple.shade300
         ),
         drawer: navigationDrawer(),
         body: Column(
           children: [
+            Container(
+              margin: const EdgeInsets.symmetric(vertical: 17),
+            ),
             notification(1),
             notification(2),
             notification(3),
@@ -169,7 +173,20 @@ class _notificationPageState extends State<notificationPage> {
 
   Widget notification(int index) {
     return Container(
+      padding: const EdgeInsets.all(10),
       margin: const EdgeInsets.symmetric(horizontal: 13, vertical: 10),
+      decoration: BoxDecoration(
+        color: Colors.purple.shade50,
+        border: Border.all(color:Colors.purple.shade100,width: 10),
+        borderRadius: BorderRadius.circular(10),
+        boxShadow: const [
+          BoxShadow(
+              color: Colors.purple,
+              offset: Offset(5,5)
+
+          )
+        ]
+    ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -200,7 +217,7 @@ class _notificationPageState extends State<notificationPage> {
           shape: BoxShape.circle,
           color: Colors.grey.shade300
       ),
-      child: Icon(Icons.notifications, size: 25, color: Colors.grey.shade700),
+      child: Icon(Icons.notifications, size: 25, color: Colors.purple[700]),
     );
   }
 

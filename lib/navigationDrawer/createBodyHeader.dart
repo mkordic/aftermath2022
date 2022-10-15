@@ -5,8 +5,8 @@ Widget createDrawerHeader() {
       margin: EdgeInsets.zero,
       padding: EdgeInsets.zero,
        decoration:
-       const BoxDecoration(
-         color: Colors.deepPurple,
+       BoxDecoration(
+         color: Colors.purple.shade300,
          //  image: DecorationImage(
          //      fit: BoxFit.fill,
          //      image:  AssetImage('assets/images/proba.png')

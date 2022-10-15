@@ -21,8 +21,8 @@ class agendaPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title: const Text("PROGRAM"),
-            backgroundColor: Color.fromRGBO(191, 85, 236, 1)
+            title: const Text("Agenda"),
+            backgroundColor: Colors.purple.shade300
         ),
         drawer: navigationDrawer(),
         body: Column(

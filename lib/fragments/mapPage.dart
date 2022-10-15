@@ -11,6 +11,7 @@ class mapPage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: const Text("Mapa Palića"),
+          backgroundColor: Colors.purple.shade300,
         ),
         drawer: navigationDrawer(),
         body: const Center(child: Text("This is map page")));
