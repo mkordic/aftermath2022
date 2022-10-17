@@ -10,10 +10,10 @@ class day5 extends StatelessWidget {
   static const rowSpacer=TableRow(
       children: [
         SizedBox(
-          height: 8,
+          height: 12,
         ),
         SizedBox(
-          height: 8,
+          height: 12,
         )
       ]);
 

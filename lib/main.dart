@@ -37,7 +37,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       theme: ThemeData(
           primaryColor: Colors.purple,
-          textTheme: GoogleFonts.crimsonTextTextTheme(
+          textTheme: GoogleFonts.montserratTextTheme(
               Theme.of(context).textTheme
           )
       ),
