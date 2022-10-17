@@ -170,8 +170,7 @@ class _notificationPageState extends State<notificationPage> {
             notification(2),
             notification(3),
             notification(4),
-            notification(5),
-            notification(6)
+            notification(5)
             ],
           )
         ),
