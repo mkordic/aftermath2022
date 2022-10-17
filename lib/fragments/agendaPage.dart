@@ -29,8 +29,10 @@ class agendaPage extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          child: Column(
-              children: <Widget>[
+          child: Column(children: <Widget>[
+            Container(
+              margin: const EdgeInsets.symmetric(vertical: 8),
+            ),
             Row(
               children: <Widget>[
                 Expanded(
@@ -40,12 +42,12 @@ class agendaPage extends StatelessWidget {
                       children: <Widget>[
                         Positioned.fill(
                           child: Container(
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               gradient: LinearGradient(
-                                colors: <Color>[
-                                  Color.fromRGBO(191, 85, 236, 1),
-                                  Color.fromRGBO(213, 184, 255, 1),
-                                  Color.fromRGBO(255, 255, 255, 1)
+                                colors: [
+                                  Colors.purple.shade300,
+                                  Colors.purple.shade100,
+                                  Colors.purple.shade50
                                 ],
                               ),
                             ),
@@ -76,12 +78,12 @@ class agendaPage extends StatelessWidget {
                       children: <Widget>[
                         Positioned.fill(
                           child: Container(
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               gradient: LinearGradient(
-                                colors: <Color>[
-                                  Color.fromRGBO(191, 85, 236, 1),
-                                  Color.fromRGBO(213, 184, 255, 1),
-                                  Color.fromRGBO(255, 255, 255, 1)
+                                colors: [
+                                  Colors.purple.shade300,
+                                  Colors.purple.shade100,
+                                  Colors.purple.shade50
                                 ],
                               ),
                             ),
@@ -111,12 +113,12 @@ class agendaPage extends StatelessWidget {
                       children: <Widget>[
                         Positioned.fill(
                           child: Container(
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               gradient: LinearGradient(
-                                colors: <Color>[
-                                  Color.fromRGBO(191, 85, 236, 1),
-                                  Color.fromRGBO(213, 184, 255, 1),
-                                  Color.fromRGBO(255, 255, 255, 1)
+                                colors: [
+                                  Colors.purple.shade300,
+                                  Colors.purple.shade100,
+                                  Colors.purple.shade50
                                 ],
                               ),
                             ),
@@ -146,12 +148,12 @@ class agendaPage extends StatelessWidget {
                       children: <Widget>[
                         Positioned.fill(
                           child: Container(
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               gradient: LinearGradient(
-                                colors: <Color>[
-                                  Color.fromRGBO(191, 85, 236, 1),
-                                  Color.fromRGBO(213, 184, 255, 1),
-                                  Color.fromRGBO(255, 255, 255, 1)
+                                colors: [
+                                  Colors.purple.shade300,
+                                  Colors.purple.shade100,
+                                  Colors.purple.shade50
                                 ],
                               ),
                             ),
@@ -181,12 +183,12 @@ class agendaPage extends StatelessWidget {
                       children: <Widget>[
                         Positioned.fill(
                           child: Container(
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               gradient: LinearGradient(
-                                colors: <Color>[
-                                  Color.fromRGBO(191, 85, 236, 1),
-                                  Color.fromRGBO(213, 184, 255, 1),
-                                  Color.fromRGBO(255, 255, 255, 1)
+                                colors: [
+                                  Colors.purple.shade300,
+                                  Colors.purple.shade100,
+                                  Colors.purple.shade50
                                 ],
                               ),
                             ),
@@ -220,7 +222,7 @@ class agendaPage extends StatelessWidget {
             const Text('DAN 1',
                 style: TextStyle(
                     fontSize: 40,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w300,
                     color: Colors.deepPurpleAccent)),
             const SizedBox(height: 30),
             Container(
@@ -393,9 +395,7 @@ class agendaPage extends StatelessWidget {
                 ],
               ),
             ),
-          ]
-          )
-      ),
+          ])),
     );
   }
 }

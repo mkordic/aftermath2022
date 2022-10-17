@@ -20,8 +20,8 @@ class day3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Text("PROGRAM"),
-          backgroundColor: const Color.fromRGBO(191, 85, 236, 1)),
+          title: const Text("Dan 3"),
+          backgroundColor: Colors.purple[300]),
       drawer: navigationDrawer(),
       body: Container(
           decoration: const BoxDecoration(
@@ -31,6 +31,9 @@ class day3 extends StatelessWidget {
             ),
           ),
           child: Column(children: <Widget>[
+            Container(
+              margin: const EdgeInsets.symmetric(vertical: 8),
+            ),
             Row(
               children: <Widget>[
                 Expanded(
@@ -40,12 +43,12 @@ class day3 extends StatelessWidget {
                       children: <Widget>[
                         Positioned.fill(
                           child: Container(
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               gradient: LinearGradient(
-                                colors: <Color>[
-                                  Color.fromRGBO(191, 85, 236, 1),
-                                  Color.fromRGBO(213, 184, 255, 1),
-                                  Color.fromRGBO(255, 255, 255, 1)
+                                colors: [
+                                  Colors.purple.shade300,
+                                  Colors.purple.shade100,
+                                  Colors.purple.shade50
                                 ],
                               ),
                             ),
@@ -76,12 +79,12 @@ class day3 extends StatelessWidget {
                       children: <Widget>[
                         Positioned.fill(
                           child: Container(
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               gradient: LinearGradient(
-                                colors: <Color>[
-                                  Color.fromRGBO(191, 85, 236, 1),
-                                  Color.fromRGBO(213, 184, 255, 1),
-                                  Color.fromRGBO(255, 255, 255, 1)
+                                colors: [
+                                  Colors.purple.shade300,
+                                  Colors.purple.shade100,
+                                  Colors.purple.shade50
                                 ],
                               ),
                             ),
@@ -111,12 +114,12 @@ class day3 extends StatelessWidget {
                       children: <Widget>[
                         Positioned.fill(
                           child: Container(
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               gradient: LinearGradient(
-                                colors: <Color>[
-                                  Color.fromRGBO(191, 85, 236, 1),
-                                  Color.fromRGBO(213, 184, 255, 1),
-                                  Color.fromRGBO(255, 255, 255, 1)
+                                colors: [
+                                  Colors.purple.shade300,
+                                  Colors.purple.shade100,
+                                  Colors.purple.shade50
                                 ],
                               ),
                             ),
@@ -146,12 +149,12 @@ class day3 extends StatelessWidget {
                       children: <Widget>[
                         Positioned.fill(
                           child: Container(
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               gradient: LinearGradient(
-                                colors: <Color>[
-                                  Color.fromRGBO(191, 85, 236, 1),
-                                  Color.fromRGBO(213, 184, 255, 1),
-                                  Color.fromRGBO(255, 255, 255, 1)
+                                colors: [
+                                  Colors.purple.shade300,
+                                  Colors.purple.shade100,
+                                  Colors.purple.shade50
                                 ],
                               ),
                             ),
@@ -181,12 +184,12 @@ class day3 extends StatelessWidget {
                       children: <Widget>[
                         Positioned.fill(
                           child: Container(
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               gradient: LinearGradient(
-                                colors: <Color>[
-                                  Color.fromRGBO(191, 85, 236, 1),
-                                  Color.fromRGBO(213, 184, 255, 1),
-                                  Color.fromRGBO(255, 255, 255, 1)
+                                colors: [
+                                  Colors.purple.shade300,
+                                  Colors.purple.shade100,
+                                  Colors.purple.shade50
                                 ],
                               ),
                             ),
@@ -217,13 +220,11 @@ class day3 extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 30),
-            Container(
-              child: const Text('DAN 3',
-                  style: TextStyle(
-                      fontSize: 40,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.deepPurpleAccent)),
-            ),
+            // const Text('DAN 3',
+            //     style: TextStyle(
+            //         fontSize: 40,
+            //         fontWeight: FontWeight.w600,
+            //         color: Colors.deepPurpleAccent)),
             const SizedBox(height: 30),
             Container(
               margin: const EdgeInsets.all(10),

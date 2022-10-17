@@ -74,7 +74,7 @@ class _MyAppState extends State<MyApp> {
       ),
       routes: {
         pageRoutes.home: (context) => MyApp(),
-        pageRoutes.agenda: (context) => agendaPage(),
+        pageRoutes.agenda: (context) => day1(),
         pageRoutes.map: (context) => mapPage(),
         pageRoutes.notification: (context) => notificationPage(),
         agendaPagesRoutes.first: (context) => day1(),

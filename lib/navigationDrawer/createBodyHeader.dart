@@ -7,10 +7,10 @@ Widget createDrawerHeader() {
        decoration:
        BoxDecoration(
          color: Colors.purple.shade300,
-         //  image: DecorationImage(
-         //      fit: BoxFit.fill,
-         //      image:  AssetImage('assets/images/proba.png')
-         //  )
+        // image: const DecorationImage(
+        //       fit: BoxFit.cover,
+        //       image:  AssetImage('assets/images/grid.png')
+        //   )
       ),
       child: Stack(children: const <Widget>[
         Positioned(
