@@ -154,7 +154,14 @@ class _notificationPageState extends State<notificationPage> {
             backgroundColor: Colors.purple.shade300
         ),
         drawer: navigationDrawer(),
-        body: Column(
+        body: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/grid.png"),
+              fit: BoxFit.cover,
+            ),
+          ),
+        child: Column(
           children: [
             Container(
               margin: const EdgeInsets.symmetric(vertical: 17),
@@ -165,8 +172,9 @@ class _notificationPageState extends State<notificationPage> {
             notification(4),
             notification(5),
             notification(6)
-          ],
-        )
+            ],
+          )
+        ),
     );
   }
 

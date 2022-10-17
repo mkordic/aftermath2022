@@ -47,9 +47,15 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           backgroundColor: Colors.purple.shade300,
           title: const Text('AfterMath'),
-          //title: Image.asset('assets/images/6.png',fit: BoxFit.cover),
         ),
-        body: FutureBuilder(
+        body: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/grid.png"),
+              fit: BoxFit.cover,
+            ),
+          ),
+        child: FutureBuilder(
             future: _fbApp,
             builder: (context, snapshot) {
               if(snapshot.hasError) {
@@ -63,8 +69,9 @@ class _MyAppState extends State<MyApp> {
                 );
               }
             }
-        ),
-      ) ,
+          ),
+        ) ,
+      ),
       routes: {
         pageRoutes.home: (context) => MyApp(),
         pageRoutes.agenda: (context) => agendaPage(),
