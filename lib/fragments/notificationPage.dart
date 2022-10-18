@@ -157,7 +157,7 @@ class _notificationPageState extends State<notificationPage> {
         body: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage("assets/images/grid.png"),
+              image: AssetImage("assets/images/background.png"),
               fit: BoxFit.cover,
             ),
           ),

@@ -54,7 +54,7 @@ class _MyAppState extends State<MyApp> {
         body: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage("assets/images/grid.png"),
+              image: AssetImage("assets/images/background.png"),
               fit: BoxFit.cover,
             ),
           ),
