@@ -14,6 +14,7 @@ import 'fragments/agendaPages/day2.dart';
 import 'fragments/agendaPages/day3.dart';
 import 'fragments/agendaPages/day4.dart';
 import 'fragments/agendaPages/day5.dart';
+import 'fragments/mainFirstPage.dart';
 import 'fragments/notificationPage.dart';
 
 
@@ -124,14 +125,14 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     }
     return PageView(
       controller: pageControler,
-      children: <Widget>[
+      children: const <Widget>[
+
+        mainFirstPage(),
+
         Center(
-            child: Text(_announcement)
-        ),
-        const Center(
           child: Text("second page"),
         ),
-        const Center(
+        Center(
           child: Text("third page"),
         ),
       ],
