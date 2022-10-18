@@ -229,7 +229,7 @@ class day1 extends StatelessWidget {
               margin: const EdgeInsets.all(10),
               child: Table(
                 columnWidths: const {
-                  0: FixedColumnWidth(120),
+                  0: FixedColumnWidth(130),
                   1: FlexColumnWidth()
                 },
                 children: [
@@ -244,8 +244,8 @@ class day1 extends StatelessWidget {
                         Text('Put', style: TextStyle(fontSize: 20.0))
                       ]),
                     ],
-                    decoration: BoxDecoration(
-                        color: Colors.purple.shade50,
+                    decoration: const BoxDecoration(
+                        color: Color.fromRGBO(250, 200, 201, 1),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -259,8 +259,8 @@ class day1 extends StatelessWidget {
                             style: TextStyle(fontSize: 20.0))
                       ]),
                     ],
-                    decoration: BoxDecoration(
-                        color: Colors.purple.shade100,
+                    decoration: const BoxDecoration(
+                        color:  Color.fromRGBO(219, 148, 190, 1),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -273,8 +273,8 @@ class day1 extends StatelessWidget {
                         Text('Ručak', style: TextStyle(fontSize: 20.0))
                       ]),
                     ],
-                    decoration: BoxDecoration(
-                        color: Colors.purple.shade200,
+                    decoration: const BoxDecoration(
+                        color: Color.fromRGBO(217, 131, 166, 1),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -287,23 +287,23 @@ class day1 extends StatelessWidget {
                         Text('Slobodno vreme', style: TextStyle(fontSize: 20.0))
                       ]),
                     ],
-                    decoration: BoxDecoration(
-                            color: Colors.purple.shade300,
-                            borderRadius: BorderRadius.all(Radius.circular(7))),
+                    decoration: const BoxDecoration(
+                        color: Color.fromRGBO(250, 200, 201, 1),
+                        borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
                   TableRow(
                     children: [
                       Column(children: const [
-                        Text('15:00-15:45', style: TextStyle(fontSize: 20.0, color: Colors.white, fontWeight: FontWeight.bold))
+                        Text('15:00-15:45', style: TextStyle(fontSize: 20.0, color: Colors.black))
                       ]),
                       Column(children: const [
                         Text('Svečano otvaranje',
-                            style: TextStyle(fontSize: 20.0, color: Colors.white, fontWeight: FontWeight.bold))
+                            style: TextStyle(fontSize: 20.0, color: Colors.black))
                       ]),
                     ],
-                    decoration: BoxDecoration(
-                        color: Colors.purple.shade700,
+                    decoration: const BoxDecoration(
+                        color: Color.fromRGBO(217, 71, 115, 1),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -317,22 +317,22 @@ class day1 extends StatelessWidget {
                       ]),
                     ],
                     decoration: BoxDecoration(
-                            color: Colors.purple.shade50,
-                            borderRadius: BorderRadius.all(Radius.circular(7))),
+                        color: Color.fromRGBO(250, 200, 201, 1),
+                        borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
                   TableRow(
                     children: [
                       Column(children: const [
-                        Text('16:00-16:45', style: TextStyle(fontSize: 20.0,color: Colors.white, fontWeight: FontWeight.bold))
+                        Text('16:00-16:45', style: TextStyle(fontSize: 20.0,color: Colors.black))
                       ]),
                       Column(children: const [
                         Text('Predavanje kompanije',
-                            style: TextStyle(fontSize: 20.0, color: Colors.white, fontWeight: FontWeight.bold))
+                            style: TextStyle(fontSize: 20.0, color: Colors.black))
                       ]),
                     ],
-                    decoration: BoxDecoration(
-                        color: Colors.purple.shade700,
+                    decoration: const BoxDecoration(
+                        color: Color.fromRGBO(217, 71, 115, 1),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -345,23 +345,23 @@ class day1 extends StatelessWidget {
                         Text('Pauza', style: TextStyle(fontSize: 20.0))
                       ]),
                     ],
-                    decoration: BoxDecoration(
-                            color: Colors.purple.shade50,
-                            borderRadius: BorderRadius.all(Radius.circular(7))),
+                    decoration: const BoxDecoration(
+                        color: Color.fromRGBO(250, 200, 201, 1),
+                        borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
                   TableRow(
                     children: [
                       Column(children: const [
-                        Text('17:00-17:45', style: TextStyle(fontSize: 20.0,color: Colors.white, fontWeight: FontWeight.bold))
+                        Text('17:00-17:45', style: TextStyle(fontSize: 20.0,color: Colors.black))
                       ]),
                       Column(children: const [
-                        Text('Naucno predavanje',
-                            style: TextStyle(fontSize: 20.0, color: Colors.white, fontWeight: FontWeight.bold))
+                        Text('Naučno predavanje',
+                            style: TextStyle(fontSize: 20.0, color: Colors.black))
                       ]),
                     ],
-                    decoration: BoxDecoration(
-                        color: Colors.purple.shade700,
+                    decoration: const BoxDecoration(
+                        color: Color.fromRGBO(217, 71, 115, 1),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -374,8 +374,8 @@ class day1 extends StatelessWidget {
                         Text('Slobodno vreme', style: TextStyle(fontSize: 20.0))
                       ]),
                     ],
-                    decoration: BoxDecoration(
-                        color: Colors.purple.shade200,
+                    decoration: const BoxDecoration(
+                        color: Color.fromRGBO(250, 200, 201, 1),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -388,23 +388,23 @@ class day1 extends StatelessWidget {
                         Text('Večera', style: TextStyle(fontSize: 20.0))
                       ]),
                     ],
-                    decoration: BoxDecoration(
-                        color: Colors.purple.shade300,
+                    decoration: const BoxDecoration(
+                        color: Color.fromRGBO(217, 131, 166, 1),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
                   TableRow(
                     children: [
                       Column(children: const [
-                        Text('21:00-00:00', style: TextStyle(fontSize: 20.0, color: Colors.white, fontWeight: FontWeight.bold))
+                        Text('21:00-00:00', style: TextStyle(fontSize: 20.0, color: Colors.black))
                       ]),
                       Column(children: const [
                         Text('Zabavni program',
-                            style: TextStyle(fontSize: 20.0, color: Colors.white, fontWeight: FontWeight.bold))
+                            style: TextStyle(fontSize: 20.0, color: Colors.black))
                       ]),
                     ],
-                    decoration: BoxDecoration(
-                        color: Colors.purple.shade700,
+                    decoration: const BoxDecoration(
+                        color:  Color.fromRGBO(219, 148, 190, 1),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   )
                 ],

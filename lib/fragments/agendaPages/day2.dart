@@ -261,7 +261,7 @@ class day2 extends StatelessWidget {
                       ]),
                     ],
                     decoration: const BoxDecoration(
-                        color: Color.fromRGBO(217, 131, 166, 1),
+                        color: Color.fromRGBO(217, 71, 115, 1),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -291,7 +291,7 @@ class day2 extends StatelessWidget {
                     ],
                     decoration: //BoxDecoration(color: Color.fromRGBO(223, 176, 211, 1),
                         const BoxDecoration(
-                            color: Color.fromRGBO(217, 131, 166, 1),
+                            color: Color.fromRGBO(217, 71, 115, 1),
                             borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -366,7 +366,7 @@ class day2 extends StatelessWidget {
                       ]),
                     ],
                     decoration: const BoxDecoration(
-                        color: Color.fromRGBO(219, 148, 190, 1),
+                        color: Color.fromRGBO(217, 71, 115, 1),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -395,7 +395,7 @@ class day2 extends StatelessWidget {
                       ]),
                     ],
                     decoration: const BoxDecoration(
-                        color: Color.fromRGBO(219, 148, 190, 1),
+                        color:Color.fromRGBO(217, 71, 115, 1),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
