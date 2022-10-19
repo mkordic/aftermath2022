@@ -111,7 +111,7 @@ class day5 extends StatelessWidget {
                         Column(
                           children: const [
                             Text('08:00-10:00',
-                                style: TextStyle(fontSize: 20.0))
+                                style: TextStyle(fontSize: 18.0))
                           ],
                         ),
                         Column(children: const [
@@ -119,7 +119,7 @@ class day5 extends StatelessWidget {
                         ]),
                       ],
                       decoration: const BoxDecoration(
-                          color: Color.fromRGBO(250, 200, 201, 1),
+                          color: Color.fromRGBO(185, 104, 199, 1.0),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
                     rowSpacer,
@@ -134,7 +134,7 @@ class day5 extends StatelessWidget {
                         ]),
                       ],
                       decoration: const BoxDecoration(
-                          color: Color.fromRGBO(217, 131, 166, 1),
+                          color: Color.fromRGBO(231, 187, 236, 1),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
                     rowSpacer,
@@ -149,7 +149,7 @@ class day5 extends StatelessWidget {
                         ]),
                       ],
                       decoration: const BoxDecoration(
-                          color: Color.fromRGBO(217, 71, 115, 1),
+                          color: Color.fromRGBO(242, 228, 244, 1.0),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     ),
                     rowSpacer,
@@ -163,7 +163,7 @@ class day5 extends StatelessWidget {
                         ]),
                       ],
                       decoration: const BoxDecoration(
-                          color: Color.fromRGBO(219, 148, 190, 1),
+                          color: Color.fromRGBO(204, 159, 216, 1.0),
                           borderRadius: BorderRadius.all(Radius.circular(7))),
                     )
                   ],

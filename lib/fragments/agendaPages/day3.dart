@@ -118,7 +118,7 @@ class day3 extends StatelessWidget {
                       ]),
                     ],
                     decoration: const BoxDecoration(
-                        color: Color.fromRGBO(250, 200, 201, 1),
+                        color: Color.fromRGBO(185, 104, 199, 1.0),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -133,7 +133,7 @@ class day3 extends StatelessWidget {
                       ]),
                     ],
                     decoration: const BoxDecoration(
-                        color: Color.fromRGBO(217, 131, 166, 1),
+                        color: Color.fromRGBO(242, 228, 244, 1.0),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -147,7 +147,7 @@ class day3 extends StatelessWidget {
                       ]),
                     ],
                     decoration: const BoxDecoration(
-                        color: Color.fromRGBO(250, 200, 201, 1),
+                        color: Color.fromRGBO(138, 78, 149, 1.0),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -163,7 +163,7 @@ class day3 extends StatelessWidget {
                     ],
                     decoration: //BoxDecoration(color: Color.fromRGBO(223, 176, 211, 1),
                         const BoxDecoration(
-                            color: Color.fromRGBO(217, 131, 166, 1),
+                            color: Color.fromRGBO(242, 228, 244, 1.0),
                             borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -177,7 +177,7 @@ class day3 extends StatelessWidget {
                       ]),
                     ],
                     decoration: const BoxDecoration(
-                        color: Color.fromRGBO(250, 200, 201, 1),
+                        color: Color.fromRGBO(204, 159, 216, 1.0),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -193,7 +193,7 @@ class day3 extends StatelessWidget {
                     ],
                     decoration: //BoxDecoration(color: Color.fromRGBO(228, 208, 237, 1),
                         const BoxDecoration(
-                            color: Color.fromRGBO(217, 71, 115, 1),
+                            color: Color.fromRGBO(242, 228, 244, 1.0),
                             borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -208,7 +208,7 @@ class day3 extends StatelessWidget {
                       ]),
                     ],
                     decoration: const BoxDecoration(
-                        color: Color.fromRGBO(217, 131, 166, 1),
+                        color: Color.fromRGBO(185, 104, 199, 1.0),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -223,7 +223,7 @@ class day3 extends StatelessWidget {
                     ],
                     decoration: //BoxDecoration(color: Color.fromRGBO(217, 131, 166, 1),
                         const BoxDecoration(
-                            color: Color.fromRGBO(250, 200, 201, 1),
+                            color: Color.fromRGBO(204, 159, 216, 1.0),
                             borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -238,7 +238,7 @@ class day3 extends StatelessWidget {
                       ]),
                     ],
                     decoration: const BoxDecoration(
-                        color: Color.fromRGBO(219, 148, 190, 1),
+                        color: Color.fromRGBO(242, 228, 244, 1.0),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -252,7 +252,7 @@ class day3 extends StatelessWidget {
                       ]),
                     ],
                     decoration: const BoxDecoration(
-                        color: Color.fromRGBO(250, 200, 201, 1),
+                        color: Color.fromRGBO(138, 78, 149, 1.0),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -267,7 +267,7 @@ class day3 extends StatelessWidget {
                       ]),
                     ],
                     decoration: const BoxDecoration(
-                        color: Color.fromRGBO(219, 148, 190, 1),
+                        color: Color.fromRGBO(242, 228, 244, 1.0),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -281,7 +281,7 @@ class day3 extends StatelessWidget {
                       ]),
                     ],
                     decoration: const BoxDecoration(
-                        color: Color.fromRGBO(250, 200, 201, 1),
+                        color: Color.fromRGBO(204, 159, 216, 1.0),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -295,7 +295,7 @@ class day3 extends StatelessWidget {
                       ]),
                     ],
                     decoration: const BoxDecoration(
-                        color: Color.fromRGBO(217, 131, 166, 1),
+                        color: Color.fromRGBO(185, 104, 199, 1.0),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),
                   rowSpacer,
@@ -310,7 +310,7 @@ class day3 extends StatelessWidget {
                       ]),
                     ],
                     decoration: const BoxDecoration(
-                        color: Color.fromRGBO(219, 148, 190, 1),
+                        color: Color.fromRGBO(231, 187, 236, 1),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   )
                 ],
