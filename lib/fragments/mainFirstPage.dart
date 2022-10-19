@@ -1,25 +1,104 @@
 import 'package:flutter/material.dart';
 import '../navigationDrawer/navigationDrawer.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class mainFirstPage extends StatelessWidget {
-  static const String routeName = '/mapPage';
+  static const String routeName = '/mainFirstPage';
 
   const mainFirstPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return RichText(
-        text: TextSpan(
-          children: [
-            const TextSpan(
-              text: "Studentska konferencija “Savremena matematika i primene – AfterMath“ održaće se od 26. do 30. oktobra 2022. godine u Studentskom kompleksu „Palić“ na Paliću.\nKonferencija ima za cilj da promoviše multidisciplinarnost kao i da stvori jedinstvenu priliku za razmenu i implementaciju naučnih dostignuća, te upozna studente sa njihovim mogućnostima nakon završetka studija. Učešćem na događaju studenti se mogu edukovati u vezi sa aktuelnim i interesantnim pitanjima iz oblasti matematike, informatike i astronomije.\nOd najboljih profesora Univerziteta u Beogradu i gostujućih predavača iz kompanija partnera projekta, imaćete priliku da učite i upoznate se sa novim pravcima u istraživanjima i postignutim rezultatima, te da se informišete o načinu poslovanja vodećih kompanija na našem tržištu i steknete neophodna znanja za prve korake u izgradnji karijere. Kompanije svojim predavanjima pokrivaju popularne teme iz softverskog inženjeringa, gejminga, aktuarstva i novih programskih jezika.\nNezadrživo i brzo prodiranje matematičkih ideja i metoda u gotovo sve grane nauke, tehnike i prakse jedna je od najbitnijih odlika savremene matematike. Kroz radionice, predavanja i diskusije sa predavačima, razumećete zašto je matematika danas suštinsko oruđe u mnogim naučnim oblastima.",
-              style: TextStyle(
-                color: Colors.purple,
-                fontSize: 28,
+    return Scaffold(
+        appBar: AppBar(
+            title: const Text("AfterMath"),
+            backgroundColor: Colors.purple.shade300),
+        drawer: navigationDrawer(),
+        body: Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/images/background.png"),
+                fit: BoxFit.cover,
               ),
-            )
-          ]
-        )
+            ),
+            child: Column(
+              children: [
+                Container(
+                  margin: const EdgeInsets.only(top: 10),
+                ),
+                _header(),
+                Container(margin: const EdgeInsets.symmetric(vertical: 30)),
+                _body()
+              ],
+            )));
+  }
+
+  Widget _header() {
+    return Container(
+      padding: const EdgeInsets.all(10),
+      margin: const EdgeInsets.symmetric(vertical: 25),
+      decoration: BoxDecoration(
+          color: Colors.purple.shade50,
+          border: Border.all(color: Colors.purple.shade100, width: 10),
+          borderRadius: BorderRadius.circular(10),
+          boxShadow: const [
+            BoxShadow(color: Colors.purple, offset: Offset(5, 5))
+          ]),
+      child: Expanded(
+        child: Container(
+          margin: const EdgeInsets.only(left: 10),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              RichText(
+                  text: TextSpan(
+                      text: 'Dobrodošli na AfterMath2022',
+                      style: TextStyle(
+                          color: Colors.purple[900],
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold)))
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _body() {
+    return Container(
+      padding: const EdgeInsets.all(10),
+      margin: const EdgeInsets.symmetric(horizontal: 13, vertical: 10),
+      decoration: BoxDecoration(
+          color: Colors.purple.shade50,
+          border: Border.all(color: Colors.purple.shade100, width: 10),
+          borderRadius: BorderRadius.circular(10),
+          boxShadow: const [
+            BoxShadow(color: Colors.purple, offset: Offset(5, 5))
+          ]),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(
+            child: Container(
+              margin: const EdgeInsets.only(left: 10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  RichText(
+                      text: const TextSpan(
+                          text:
+                              "Potrudili smo se da vam olakšamo snalaženje tokom konferencije"
+                              " tako da sve najbitnije informacije imate na jednom mestu: \n"
+                              "\t • U odeljku AGENDA naći ćete satnicu programa\n"
+                              "\t • U odeljku MAPA PALIĆA naći ćete lokacije \n"
+                              "\t • U odeljku NOTIFIKACIJE dobijaćete najbitnija obaveštenja\n",
+                          style: TextStyle(color: Colors.black, fontSize: 17)))
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

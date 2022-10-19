@@ -42,12 +42,6 @@ class _GlowingButtonState extends State<GlowingButton> {
         width: 60,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
-            // gradient: LinearGradient(
-            //   colors: [
-            //     widget.color1,
-            //     widget.color2
-            //   ],
-            // ),
 
             color: Colors.purple.shade50,
             border: Border.all(color:Colors.purple.shade100,width: 3),

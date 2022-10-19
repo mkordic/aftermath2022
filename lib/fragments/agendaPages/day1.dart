@@ -369,7 +369,7 @@ class day1 extends StatelessWidget {
                         Text('Pauza', style: TextStyle(fontSize: 20.0))
                       ]),
                     ],
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         color: Color.fromRGBO(138, 78, 149, 1.0),
                         borderRadius: BorderRadius.all(Radius.circular(7))),
                   ),

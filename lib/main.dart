@@ -1,3 +1,4 @@
+import 'package:aftermath/fragments/mainThirdPage.dart';
 import 'package:aftermath/fragments/mapPage.dart';
 import 'package:aftermath/navigationDrawer/navigationDrawer.dart';
 import 'package:aftermath/routes/pageRoutes.dart';
@@ -16,6 +17,8 @@ import 'fragments/agendaPages/day3.dart';
 import 'fragments/agendaPages/day4.dart';
 import 'fragments/agendaPages/day5.dart';
 import 'fragments/mainFirstPage.dart';
+import 'fragments/mainFourthPage.dart';
+import 'fragments/mainSecondPage.dart';
 import 'fragments/notificationPage.dart';
 
 
@@ -46,11 +49,11 @@ class _MyAppState extends State<MyApp> {
       ),
       title: 'AfterMath',
       home: Scaffold(
-        drawer: navigationDrawer(),
-        appBar: AppBar(
-          backgroundColor: Colors.purple.shade300,
-          title: const Text('AfterMath'),
-        ),
+        // drawer: navigationDrawer(),
+        // appBar: AppBar(
+        //   backgroundColor: Colors.purple.shade300,
+        //   title: const Text('AfterMath'),
+        // ),
         body: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
@@ -129,13 +132,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       children: const <Widget>[
 
         mainFirstPage(),
-
-        Center(
-          child: Text("second page"),
-        ),
-        Center(
-          child: Text("third page"),
-        ),
+        mainSecondPage(),
+        mainThirdPage(),
+        mainFourthPage()
       ],
 
     );

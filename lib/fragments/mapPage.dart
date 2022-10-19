@@ -61,30 +61,6 @@ class mapPage extends StatelessWidget {
                     height: 45.0
                 ),
                 Marker(
-                  //novi
-                    point: LatLng(46.1, 19.8),
-                    builder: (context)=> Container(
-                      child: IconButton(
-                        icon: Icon(Icons.location_on),
-                        color: Colors.purple.shade400,
-                        iconSize:45.0 ,
-                        onPressed: (){
-                          showModalBottomSheet(
-                            context: context,
-                            builder: (builder){
-                              return Container(
-                                color:Colors.purple.shade100,
-                                child: Text("\n\nBottom sheet\n\n"),
-                              );
-                            });
-
-                        },
-                      ),
-                    ),
-                    width: 45.0,
-                    height: 45.0
-                ),
-                Marker(
                   //terasa
                     point: LatLng(46.09380562416751, 19.76520974054218),
                     builder: (context)=> Container(
