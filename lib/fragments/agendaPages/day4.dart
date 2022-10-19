@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../navigationDrawer/navigationDrawer.dart';
 import '../../routes/agendaPagesRoutes.dart';
+import '../../glowingButton.dart';
 
 class day4 extends StatelessWidget {
   static const String routeName = '/day4';
@@ -37,185 +38,56 @@ class day4 extends StatelessWidget {
               Row(
                 children: <Widget>[
                   Expanded(
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(4),
-                      child: Stack(
-                        children: <Widget>[
-                          Positioned.fill(
-                            child: Container(
-                              decoration: BoxDecoration(
-                              gradient: LinearGradient(
-                                colors: [
-                                  Colors.purple.shade300,
-                                  Colors.purple.shade100,
-                                  Colors.purple.shade50
-                                ],
-                              ),
-                            ),
-                            ),
-                          ),
-                          TextButton(
-                            style: TextButton.styleFrom(
-                              foregroundColor: Colors.black,
-                              padding: const EdgeInsets.all(16.0),
-                              textStyle: const TextStyle(
-                                  fontSize: 12, fontWeight: FontWeight.w900),
-                            ),
-                            onPressed: () {
-                              Navigator.pushReplacementNamed(
-                                  context, agendaPagesRoutes.first);
-                            },
-                            child: const Text('26/10'),
-                          ),
-                        ],
-                      ),
-                    ),
-                    //Text('26/10', textAlign: TextAlign.center),
+                      child:GlowingButton(
+                        route: agendaPagesRoutes.first,
+                        text: "26/10",
+                        color1: Colors.purple,
+                        color2: Colors.indigo.shade100,
+                      )
+                  ),
+                  const SizedBox(
+                    width: 10,
                   ),
                   Expanded(
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(4),
-                      child: Stack(
-                        children: <Widget>[
-                          Positioned.fill(
-                            child: Container(
-                              decoration: BoxDecoration(
-                              gradient: LinearGradient(
-                                colors: [
-                                  Colors.purple.shade300,
-                                  Colors.purple.shade100,
-                                  Colors.purple.shade50
-                                ],
-                              ),
-                            ),
-                            ),
-                          ),
-                          TextButton(
-                            style: TextButton.styleFrom(
-                              foregroundColor: Colors.black,
-                              padding: const EdgeInsets.all(16.0),
-                              textStyle: const TextStyle(
-                                  fontSize: 12, fontWeight: FontWeight.w900),
-                            ),
-                            onPressed: () {
-                              Navigator.pushReplacementNamed(
-                                  context, agendaPagesRoutes.second);
-                            },
-                            child: const Text('27/10'),
-                          ),
-                        ],
-                      ),
-                    ),
+                      child: GlowingButton(
+                        route: agendaPagesRoutes.second,
+                        text: "27/10",
+                        color1: Colors.purple,
+                        color2: Colors.indigo.shade100,
+                      )
+                  ),
+                  const SizedBox(
+                    width: 10,
                   ),
                   Expanded(
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(4),
-                      child: Stack(
-                        children: <Widget>[
-                          Positioned.fill(
-                            child: Container(
-                              decoration: BoxDecoration(
-                              gradient: LinearGradient(
-                                colors: [
-                                  Colors.purple.shade300,
-                                  Colors.purple.shade100,
-                                  Colors.purple.shade50
-                                ],
-                              ),
-                            ),
-                            ),
-                          ),
-                          TextButton(
-                            style: TextButton.styleFrom(
-                              foregroundColor: Colors.black,
-                              padding: const EdgeInsets.all(16.0),
-                              textStyle: const TextStyle(
-                                  fontSize: 12, fontWeight: FontWeight.w900),
-                            ),
-                            onPressed: () {
-                              Navigator.pushReplacementNamed(
-                                  context, agendaPagesRoutes.third);
-                            },
-                            child: const Text('28/10'),
-                          ),
-                        ],
-                      ),
-                    ),
+                      child: GlowingButton(
+                        route: agendaPagesRoutes.third,
+                        text: "28/10",
+                        color1: Colors.purple,
+                        color2: Colors.indigo.shade100,
+                      )
+                  ),
+                  const SizedBox(
+                    width: 10,
                   ),
                   Expanded(
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(4),
-                      child: Stack(
-                        children: <Widget>[
-                          Positioned.fill(
-                            child: Container(
-                              decoration: BoxDecoration(
-                              gradient: LinearGradient(
-                                colors: [
-                                  Colors.purple.shade300,
-                                  Colors.purple.shade100,
-                                  Colors.purple.shade50
-                                ],
-                              ),
-                            ),
-                            ),
-                          ),
-                          TextButton(
-                            style: TextButton.styleFrom(
-                              foregroundColor: Colors.black,
-                              padding: const EdgeInsets.all(16.0),
-                              textStyle: const TextStyle(
-                                  fontSize: 12, fontWeight: FontWeight.w900),
-                            ),
-                            onPressed: () {
-                              Navigator.pushReplacementNamed(
-                                  context, agendaPagesRoutes.fourth);
-                            },
-                            child: const Text('29/10'),
-                          ),
-                        ],
-                      ),
-                    ),
+                      child: GlowingButton(
+                        route: agendaPagesRoutes.fourth,
+                        text: "29/10",
+                        color1: Colors.purple,
+                        color2: Colors.indigo.shade100,
+                      )
+                  ),
+                  const SizedBox(
+                    width: 10,
                   ),
                   Expanded(
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(4),
-                      child: Stack(
-                        children: <Widget>[
-                          Positioned.fill(
-                            child: Container(
-                              decoration: BoxDecoration(
-                              gradient: LinearGradient(
-                                colors: [
-                                  Colors.purple.shade300,
-                                  Colors.purple.shade100,
-                                  Colors.purple.shade50
-                                ],
-                              ),
-                            ),
-                            ),
-                          ),
-                          TextButton(
-                            style: TextButton.styleFrom(
-                              foregroundColor: Colors.black,
-                              padding: const EdgeInsets.all(16.0),
-                              textStyle: const TextStyle(
-                                  fontSize: 12, fontWeight: FontWeight.w900),
-                            ),
-                            onPressed: () {
-                              Navigator.pushReplacementNamed(
-                                  context, agendaPagesRoutes.fifth);
-                            },
-                            child: const Text('30/10'),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  const Expanded(
-                    child: FittedBox(
-                      child: FlutterLogo(),
-                    ),
+                      child: GlowingButton(
+                        route: agendaPagesRoutes.fifth,
+                        text: "30/10",
+                        color1: Colors.purple,
+                        color2: Colors.indigo.shade100,
+                      )
                   ),
                 ],
               ),
