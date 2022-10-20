@@ -13,7 +13,7 @@ class navigationDrawer extends StatelessWidget {
           createDrawerHeader(),
           createDrawerBodyItem(
             icon: Icons.home,
-            text: 'Home',
+            text: 'Početna',
             onTap: () =>
                 Navigator.pushReplacementNamed(context, pageRoutes.home),
           ),
@@ -33,7 +33,7 @@ class navigationDrawer extends StatelessWidget {
 
           createDrawerBodyItem(
               icon: Icons.notifications_active,
-              text: 'Notifications',
+              text: 'Notifikacije',
               onTap: () =>
                 Navigator.pushReplacementNamed(context, pageRoutes.notification)
           ),

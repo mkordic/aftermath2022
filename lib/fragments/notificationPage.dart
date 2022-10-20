@@ -12,7 +12,6 @@ class notificationPage extends StatefulWidget {
 }
 
 class _notificationPageState extends State<notificationPage> {
-
   final database = FirebaseDatabase.instance.ref();
   // final announcementRef = FirebaseDatabase.instance.ref("https://aftermath-a85bf-default-rtdb.europe-west1.firebasedatabase.app/announcements");
   String _announcement_1 = '';
@@ -33,13 +32,19 @@ class _notificationPageState extends State<notificationPage> {
   String _announcement_4_time = '';
   String _announcement_5_time = '';
 
+  bool _announcement_1_visibility = true;
+  bool _announcement_2_visibility = false;
+  bool _announcement_3_visibility = false;
+  bool _announcement_4_visibility = false;
+  bool _announcement_5_visibility = false;
 
   @override
   void initState() {
     super.initState();
     _activateListeners();
   }
-  void _activateListeners(){
+
+  void _activateListeners() {
     database.child("announcements/1/text").onValue.listen((event) {
       final description = event.snapshot.value;
       setState(() {
@@ -144,73 +149,107 @@ class _notificationPageState extends State<notificationPage> {
         _announcement_5_time = time.toString();
       });
     });
+
+    database.child("announcements/1/visibility").onValue.listen((event) {
+      final visibility = event.snapshot.value;
+      setState(() {
+        _announcement_1_visibility = visibility as bool;
+      });
+    });
+
+    database.child("announcements/2/visibility").onValue.listen((event) {
+      final visibility = event.snapshot.value;
+      setState(() {
+        _announcement_2_visibility = visibility as bool;
+      });
+    });
+
+    database.child("announcements/3/visibility").onValue.listen((event) {
+      final visibility = event.snapshot.value;
+      setState(() {
+        _announcement_3_visibility = visibility as bool;
+      });
+    });
+
+    database.child("announcements/4/visibility").onValue.listen((event) {
+      final visibility = event.snapshot.value;
+      setState(() {
+        _announcement_4_visibility = visibility as bool;
+      });
+    });
+
+    database.child("announcements/5/visibility").onValue.listen((event) {
+      final visibility = event.snapshot.value;
+      setState(() {
+        _announcement_5_visibility = visibility as bool;
+      });
+    });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text("Notifications"),
-            backgroundColor: Colors.purple.shade300
-        ),
-        drawer: navigationDrawer(),
-        body: Container(
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage("assets/images/background.png"),
-              fit: BoxFit.cover,
-            ),
+      appBar: AppBar(
+          title: const Text("Obaveštenja"),
+          backgroundColor: Colors.purple.shade300),
+      drawer: navigationDrawer(),
+      body: Container(
+        constraints: BoxConstraints.expand(),
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/background.png"),
+            fit: BoxFit.cover,
           ),
-        child: Column(
-          children: [
-            Container(
-              margin: const EdgeInsets.symmetric(vertical: 17),
-            ),
-            notification(1),
-            notification(2),
-            notification(3),
-            notification(4),
-            notification(5)
-            ],
-          )
         ),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Container(
+                margin: const EdgeInsets.symmetric(vertical: 17),
+              ),
+              notification(1, _announcement_1_visibility),
+              notification(2, _announcement_2_visibility),
+              notification(3, _announcement_3_visibility),
+              notification(4, _announcement_4_visibility),
+              notification(5, _announcement_5_visibility)
+            ],
+          ),
+        ),
+      ),
     );
   }
 
-
-  Widget notification(int index) {
-    return Container(
-      padding: const EdgeInsets.all(10),
-      margin: const EdgeInsets.symmetric(horizontal: 13, vertical: 10),
-      decoration: BoxDecoration(
-        color: Colors.purple.shade50,
-        border: Border.all(color:Colors.purple.shade100,width: 10),
-        borderRadius: BorderRadius.circular(10),
-        boxShadow: const [
-          BoxShadow(
-              color: Colors.purple,
-              offset: Offset(5,5)
-
-          )
-        ]
-    ),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          prefixIcon(),
-          Expanded(
-            child: Container(
-              margin: const EdgeInsets.only(left: 10),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  message(index),
-                  timeAndDate(index),
-                ],
+  Widget notification(int index, bool visibility) {
+    return Visibility(
+      visible: visibility,
+      child: Container(
+        padding: const EdgeInsets.all(10),
+        margin: const EdgeInsets.symmetric(horizontal: 13, vertical: 10),
+        decoration: BoxDecoration(
+            color: Colors.purple.shade50,
+            border: Border.all(color: Colors.purple.shade100, width: 10),
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: const [
+              BoxShadow(color: Colors.purple, offset: Offset(5, 5))
+            ]),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            prefixIcon(),
+            Expanded(
+              child: Container(
+                margin: const EdgeInsets.only(left: 10),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    message(index),
+                    timeAndDate(index),
+                  ],
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
@@ -220,10 +259,8 @@ class _notificationPageState extends State<notificationPage> {
       height: 50,
       width: 50,
       padding: const EdgeInsets.all(10),
-      decoration: BoxDecoration(
-          shape: BoxShape.circle,
-          color: Colors.grey.shade300
-      ),
+      decoration:
+          BoxDecoration(shape: BoxShape.circle, color: Colors.grey.shade300),
       child: Icon(Icons.notifications, size: 25, color: Colors.purple[700]),
     );
   }
@@ -234,20 +271,24 @@ class _notificationPageState extends State<notificationPage> {
       maxLines: 10,
       overflow: TextOverflow.ellipsis,
       text: TextSpan(
-        text: 'Norification\n',
+        text: 'Obaveštenje\n',
         style: TextStyle(
             fontSize: textSize,
             color: Colors.black,
-            fontWeight: FontWeight.bold
-        ),
+            fontWeight: FontWeight.bold),
         children: [
           TextSpan(
-            text:  index == 1 ? _announcement_1 :
-            (index == 2 ? _announcement_2 :
-            index == 3 ? _announcement_3 :
-            index == 4 ? _announcement_4 :
-            index == 5 ? _announcement_5 :
-            "Nema obavestenja!"),
+            text: index == 1
+                ? _announcement_1
+                : (index == 2
+                    ? _announcement_2
+                    : index == 3
+                        ? _announcement_3
+                        : index == 4
+                            ? _announcement_4
+                            : index == 5
+                                ? _announcement_5
+                                : "Nema obavestenja!"),
             style: const TextStyle(
               fontWeight: FontWeight.w400,
             ),
@@ -264,23 +305,33 @@ class _notificationPageState extends State<notificationPage> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            index == 1 ? _announcement_1_date :
-            index == 2 ? _announcement_2_date :
-            index == 3 ? _announcement_3_date :
-            index == 4 ? _announcement_4_date :
-            index == 5 ? _announcement_5_date :
-            "-",
+            index == 1
+                ? _announcement_1_date
+                : index == 2
+                    ? _announcement_2_date
+                    : index == 3
+                        ? _announcement_3_date
+                        : index == 4
+                            ? _announcement_4_date
+                            : index == 5
+                                ? _announcement_5_date
+                                : "-",
             style: const TextStyle(
               fontSize: 10,
             ),
           ),
           Text(
-            index == 1 ? _announcement_1_time :
-            index == 2 ? _announcement_2_time :
-            index == 3 ? _announcement_3_time :
-            index == 4 ? _announcement_4_time :
-            index == 5 ? _announcement_5_time :
-            "-",
+            index == 1
+                ? _announcement_1_time
+                : index == 2
+                    ? _announcement_2_time
+                    : index == 3
+                        ? _announcement_3_time
+                        : index == 4
+                            ? _announcement_4_time
+                            : index == 5
+                                ? _announcement_5_time
+                                : "-",
             style: const TextStyle(
               fontSize: 10,
             ),
