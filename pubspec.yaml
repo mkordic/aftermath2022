@@ -58,6 +58,14 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
 
+  flutter_launcher_icons: ^0.10.0
+
+flutter_icons:
+  image_path: "assets/images/SUMA_ljubicasta_BELApozadina.png"
+  andorid: true
+  ios: true
+  remove_alpha_ios: true
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
