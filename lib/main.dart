@@ -9,6 +9,7 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import'package:flutter_map/flutter_map.dart';
+import 'package:flutter/services.dart';
 
 import 'fragments/agendaPage.dart';
 import 'fragments/agendaPages/day1.dart';
@@ -40,6 +41,10 @@ class _MyAppState extends State<MyApp> {
   final Future<FirebaseApp> _fbApp = Firebase.initializeApp();
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
     return MaterialApp(
       theme: ThemeData(
           primaryColor: Colors.purple,

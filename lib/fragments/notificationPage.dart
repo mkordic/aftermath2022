@@ -190,8 +190,8 @@ class _notificationPageState extends State<notificationPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Text("Obaveštenja"),
-          backgroundColor: Colors.purple.shade300),
+          title: const Text("Notifikacije"),
+          backgroundColor: Colors.purple),
       drawer: navigationDrawer(),
       body: Container(
         constraints: BoxConstraints.expand(),
@@ -207,11 +207,11 @@ class _notificationPageState extends State<notificationPage> {
               Container(
                 margin: const EdgeInsets.symmetric(vertical: 17),
               ),
-              notification(1, _announcement_1_visibility),
-              notification(2, _announcement_2_visibility),
-              notification(3, _announcement_3_visibility),
+              notification(5, _announcement_5_visibility),
               notification(4, _announcement_4_visibility),
-              notification(5, _announcement_5_visibility)
+              notification(3, _announcement_3_visibility),
+              notification(2, _announcement_2_visibility),
+              notification(1, _announcement_1_visibility)
             ],
           ),
         ),

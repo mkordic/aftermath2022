@@ -14,7 +14,7 @@ class mainSecondPage extends StatelessWidget {
     return  Scaffold(
         appBar: AppBar(
             title: const Text("Zlatni sponzori"),
-            backgroundColor: Colors.purple.shade300),
+            backgroundColor: Colors.purple),
         drawer: navigationDrawer(),
         body: Container(
             decoration: const BoxDecoration(

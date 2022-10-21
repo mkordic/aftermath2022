@@ -12,7 +12,7 @@ class mainFirstPage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
             title: const Text("AfterMath"),
-            backgroundColor: Colors.purple.shade300),
+            backgroundColor: Colors.purple),
         drawer: navigationDrawer(),
         body: Container(
             decoration: const BoxDecoration(
@@ -28,7 +28,11 @@ class mainFirstPage extends StatelessWidget {
                 ),
                 _header(),
                 Container(margin: const EdgeInsets.symmetric(vertical: 30)),
-                _body()
+                _body(),
+                Align(
+                  alignment: Alignment.bottomCenter,
+                  child: Icon(Icons.arrow_right_alt_rounded, size: 60, color: Colors.purple[50]),
+                ),
               ],
             )));
   }
@@ -44,21 +48,20 @@ class mainFirstPage extends StatelessWidget {
           boxShadow: const [
             BoxShadow(color: Colors.purple, offset: Offset(5, 5))
           ]),
-      child: Expanded(
-        child: Container(
-          margin: const EdgeInsets.only(left: 10),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              RichText(
-                  text: TextSpan(
-                      text: 'Dobrodošli na AfterMath2022',
-                      style: TextStyle(
-                          color: Colors.purple[900],
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold)))
-            ],
-          ),
+      child: Container(
+        margin: const EdgeInsets.only(left: 10),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            RichText(
+                text: TextSpan(
+                    text: 'Dobrodošli na AfterMath2022',
+                    style: TextStyle(
+                        color: Colors.purple[900],
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                        fontStyle: FontStyle.italic)))
+          ],
         ),
       ),
     );
@@ -75,29 +78,49 @@ class mainFirstPage extends StatelessWidget {
           boxShadow: const [
             BoxShadow(color: Colors.purple, offset: Offset(5, 5))
           ]),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Expanded(
-            child: Container(
-              margin: const EdgeInsets.only(left: 10),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  RichText(
-                      text: const TextSpan(
-                          text:
-                              "Potrudili smo se da vam olakšamo snalaženje tokom konferencije"
-                              " tako da sve najbitnije informacije imate na jednom mestu: \n"
-                              "\t • U odeljku AGENDA naći ćete satnicu programa\n"
-                              "\t • U odeljku MAPA PALIĆA naći ćete lokacije \n"
-                              "\t • U odeljku NOTIFIKACIJE dobijaćete najbitnija obaveštenja\n",
-                          style: TextStyle(color: Colors.black, fontSize: 17)))
+      child: Container(
+        margin: const EdgeInsets.only(left: 10),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            RichText(
+              text: TextSpan(
+                text:
+                    "Potrudili smo se da vam olakšamo snalaženje tokom konferencije,"
+                    " tako da sve najbitnije informacije imate na jednom mestu: \n",
+                style: TextStyle(color: Colors.purple[900], fontSize: 19),
+                children: const <TextSpan>[
+                  TextSpan(text: "\t • U odeljku "),
+                  TextSpan(
+                      text: "AGENDA",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontStyle: FontStyle.italic)),
+                  TextSpan(
+                      text: " naći ćete satnicu programa\n"
+                          "\t • U odeljku "),
+                  TextSpan(
+                      text: "MAPA PALIĆA",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontStyle: FontStyle.italic)),
+                  TextSpan(
+                      text: " naći ćete zanimljive lokacije "
+                          " koje možete posetiti u slobodno vreme \n"
+                          "\t • U odeljku "),
+                  TextSpan(
+                      text: "NOTIFIKACIJE",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontStyle: FontStyle.italic)),
+                  TextSpan(
+                      text: " dobijaćete najbitnija obaveštenja\n"
+                          "\t • Na narednim stranama možete videti i sponzore konferencije"),
                 ],
               ),
-            ),
-          ),
-        ],
+            )
+          ],
+        ),
       ),
     );
   }

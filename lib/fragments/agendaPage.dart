@@ -226,175 +226,32 @@ class agendaPage extends StatelessWidget {
                     color: Colors.deepPurpleAccent)),
             const SizedBox(height: 30),
             Container(
-              margin: const EdgeInsets.all(10),
-              // child: Padding(
-              //   padding: const EdgeInsets.all(20),
-              child: Table(
-                // defaultColumnWidth: FixedColumnWidth(175.0),
-                columnWidths: const {
-                  0: FixedColumnWidth(120),
-                  1: FlexColumnWidth()
-                },
-                // border: TableBorder.all(
-                //     borderRadius: BorderRadius.all(
-                //       Radius.circular(10),
-                //     ),
-                //     color: Colors.black,
-                //     style: BorderStyle.solid,
-                //     width: 2
-                //     ),
-                children: [
-                  TableRow(
-                    children: [
-                      Column(
-                        children: const [
-                          Text('10:00-11:00', style: TextStyle(fontSize: 20.0))
-                        ],
-                      ),
-                      Column(children: const [
-                        Text('Put', style: TextStyle(fontSize: 20.0))
-                      ]),
-                    ],
-                    decoration: const BoxDecoration(
-                        color: Color.fromRGBO(250, 200, 201, 1),
-                        borderRadius: BorderRadius.all(Radius.circular(7))),
+              child:ListView(
+              padding: EdgeInsets.all(20),
+              children: <Widget>[
+                CircleAvatar(
+                  maxRadius: 50,
+                  backgroundColor: Colors.black,
+                  child: Icon(Icons.person, color: Colors.white, size: 50),
+                ),
+                Center(
+                  child: Text(
+                    'Sooraj S Nair',
+                    style: TextStyle(
+                      fontSize: 50,
+                    ),
                   ),
-                  rowSpacer,
-                  TableRow(
-                    children: [
-                      Column(children: const [
-                        Text('10:00-11:00', style: TextStyle(fontSize: 20.0))
-                      ]),
-                      Column(children: const [
-                        Text('Raspoređivanje po sobama',
-                            style: TextStyle(fontSize: 20.0))
-                      ]),
-                    ],
-                    decoration: const BoxDecoration(
-                        color: Color.fromRGBO(217, 131, 166, 1),
-                        borderRadius: BorderRadius.all(Radius.circular(7))),
+                ),
+                Text(
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+                  style: TextStyle(
+                    fontSize: 20,
                   ),
-                  rowSpacer,
-                  TableRow(
-                    children: [
-                      Column(children: const [
-                        Text('10:00-11:00', style: TextStyle(fontSize: 20.0))
-                      ]),
-                      Column(children: const [
-                        Text('Ručak', style: TextStyle(fontSize: 20.0))
-                      ]),
-                    ],
-                    decoration: const BoxDecoration(
-                        color: Color.fromRGBO(219, 148, 190, 1),
-                        borderRadius: BorderRadius.all(Radius.circular(7))),
-                  ),
-                  rowSpacer,
-                  TableRow(
-                    children: [
-                      Column(children: const [
-                        Text('10:00-11:00', style: TextStyle(fontSize: 20.0))
-                      ]),
-                      Column(children: const [
-                        Text('Slobodno vreme', style: TextStyle(fontSize: 20.0))
-                      ]),
-                    ],
-                    decoration: //BoxDecoration(color: Color.fromRGBO(223, 176, 211, 1),
-                        const BoxDecoration(
-                            color: Color.fromRGBO(250, 200, 201, 1),
-                            borderRadius: BorderRadius.all(Radius.circular(7))),
-                  ),
-                  rowSpacer,
-                  TableRow(
-                    children: [
-                      Column(children: const [
-                        Text('10:00-11:00', style: TextStyle(fontSize: 20.0))
-                      ]),
-                      Column(children: const [
-                        Text('Svečano otvaranje',
-                            style: TextStyle(fontSize: 20.0))
-                      ]),
-                    ],
-                    decoration: const BoxDecoration(
-                        color: Color.fromRGBO(217, 71, 115, 1),
-                        borderRadius: BorderRadius.all(Radius.circular(7))),
-                  ),
-                  rowSpacer,
-                  TableRow(
-                    children: [
-                      Column(children: const [
-                        Text('10:00-11:00', style: TextStyle(fontSize: 20.0))
-                      ]),
-                      Column(children: const [
-                        Text('Pauza', style: TextStyle(fontSize: 20.0))
-                      ]),
-                    ],
-                    decoration: //BoxDecoration(color: Color.fromRGBO(228, 208, 237, 1),
-                        const BoxDecoration(
-                            color: Color.fromRGBO(250, 200, 201, 1),
-                            borderRadius: BorderRadius.all(Radius.circular(7))),
-                  ),
-                  rowSpacer,
-                  TableRow(
-                    children: [
-                      Column(children: const [
-                        Text('10:00-11:00', style: TextStyle(fontSize: 20.0))
-                      ]),
-                      Column(children: const [
-                        Text('Predavanje kompanije',
-                            style: TextStyle(fontSize: 20.0))
-                      ]),
-                    ],
-                    decoration: const BoxDecoration(
-                        color: Color.fromRGBO(217, 71, 115, 1),
-                        borderRadius: BorderRadius.all(Radius.circular(7))),
-                  ),
-                  rowSpacer,
-                  TableRow(
-                    children: [
-                      Column(children: const [
-                        Text('10:00-11:00', style: TextStyle(fontSize: 20.0))
-                      ]),
-                      Column(children: const [
-                        Text('Slobodno vreme', style: TextStyle(fontSize: 20.0))
-                      ]),
-                    ],
-                    decoration: //BoxDecoration(color: Color.fromRGBO(217, 131, 166, 1),
-                        const BoxDecoration(
-                            color: Color.fromRGBO(250, 200, 201, 1),
-                            borderRadius: BorderRadius.all(Radius.circular(7))),
-                  ),
-                  rowSpacer,
-                  TableRow(
-                    children: [
-                      Column(children: const [
-                        Text('10:00-11:00', style: TextStyle(fontSize: 20.0))
-                      ]),
-                      Column(children: const [
-                        Text('Večera', style: TextStyle(fontSize: 20.0))
-                      ]),
-                    ],
-                    decoration: const BoxDecoration(
-                        color: Color.fromRGBO(219, 148, 190, 1),
-                        borderRadius: BorderRadius.all(Radius.circular(7))),
-                  ),
-                  rowSpacer,
-                  TableRow(
-                    children: [
-                      Column(children: const [
-                        Text('10:00-11:00', style: TextStyle(fontSize: 20.0))
-                      ]),
-                      Column(children: const [
-                        Text('Zabavni program',
-                            style: TextStyle(fontSize: 20.0))
-                      ]),
-                    ],
-                    decoration: const BoxDecoration(
-                        color: Color.fromRGBO(217, 131, 166, 1),
-                        borderRadius: BorderRadius.all(Radius.circular(7))),
-                  )
-                ],
-              ),
+                ),
+              ],
             ),
+    )
+
           ])),
     );
   }

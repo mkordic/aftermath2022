@@ -21,8 +21,7 @@ class day5 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title: const Text("Dan 5"),
-            backgroundColor: Colors.purple[300]),
+            title: const Text("Dan 5"), backgroundColor: Colors.purple),
         drawer: navigationDrawer(),
         body: Container(
             decoration: const BoxDecoration(
@@ -38,135 +37,131 @@ class day5 extends StatelessWidget {
               Row(
                 children: <Widget>[
                   Expanded(
-                      child:GlowingButton(
-                        route: agendaPagesRoutes.first,
-                        text: "26/10",
-                        color1: Colors.purple,
-                        color2: Colors.indigo.shade100,
-                      )
-                  ),
+                      child: GlowingButton(
+                    route: agendaPagesRoutes.first,
+                    text: "26/10",
+                    color1: Colors.purple,
+                    color2: Colors.indigo.shade100,
+                  )),
                   const SizedBox(
                     width: 10,
                   ),
                   Expanded(
                       child: GlowingButton(
-                        route: agendaPagesRoutes.second,
-                        text: "27/10",
-                        color1: Colors.purple,
-                        color2: Colors.indigo.shade100,
-                      )
-                  ),
+                    route: agendaPagesRoutes.second,
+                    text: "27/10",
+                    color1: Colors.purple,
+                    color2: Colors.indigo.shade100,
+                  )),
                   const SizedBox(
                     width: 10,
                   ),
                   Expanded(
                       child: GlowingButton(
-                        route: agendaPagesRoutes.third,
-                        text: "28/10",
-                        color1: Colors.purple,
-                        color2: Colors.indigo.shade100,
-                      )
-                  ),
+                    route: agendaPagesRoutes.third,
+                    text: "28/10",
+                    color1: Colors.purple,
+                    color2: Colors.indigo.shade100,
+                  )),
                   const SizedBox(
                     width: 10,
                   ),
                   Expanded(
                       child: GlowingButton(
-                        route: agendaPagesRoutes.fourth,
-                        text: "29/10",
-                        color1: Colors.purple,
-                        color2: Colors.indigo.shade100,
-                      )
-                  ),
+                    route: agendaPagesRoutes.fourth,
+                    text: "29/10",
+                    color1: Colors.purple,
+                    color2: Colors.indigo.shade100,
+                  )),
                   const SizedBox(
                     width: 10,
                   ),
                   Expanded(
                       child: GlowingButton(
-                        route: agendaPagesRoutes.fifth,
-                        text: "30/10",
-                        color1: Colors.purple,
-                        color2: Colors.indigo.shade100,
-                      )
-                  ),
+                    route: agendaPagesRoutes.fifth,
+                    text: "30/10",
+                    color1: Colors.purple,
+                    color2: Colors.indigo.shade100,
+                  )),
                 ],
               ),
-              const SizedBox(height: 30),
-              // const Text('DAN 5',
-              //     style: TextStyle(
-              //         fontSize: 40,
-              //         fontWeight: FontWeight.w600,
-              //         color: Colors.deepPurpleAccent)),
+
               const SizedBox(height: 30),
               Container(
                 margin: const EdgeInsets.all(10),
-                child: Table(
-                  columnWidths: const {
-                    0: FixedColumnWidth(120),
-                    1: FlexColumnWidth()
-                  },
-                  children: [
-                    TableRow(
-                      children: [
-                        Column(
-                          children: const [
-                            Text('08:00-10:00',
+                child: SingleChildScrollView(
+                  child: Table(
+                    columnWidths: const {
+                      0: FixedColumnWidth(120),
+                      1: FlexColumnWidth()
+                    },
+                    children: [
+                      TableRow(
+                        children: [
+                          Column(
+                            children: const [
+                              Text('08:00-10:00',
+                                  style: TextStyle(fontSize: 18.0))
+                            ],
+                          ),
+                          Column(children: const [
+                            Text('Doručak', style: TextStyle(fontSize: 20.0))
+                          ]),
+                        ],
+                        decoration: const BoxDecoration(
+                            color: Color.fromRGBO(185, 104, 199, 1.0),
+                            borderRadius: BorderRadius.all(Radius.circular(7))),
+                      ),
+                      rowSpacer,
+                      TableRow(
+                        children: [
+                          Column(children: const [
+                            Text('10:00-11:00',
                                 style: TextStyle(fontSize: 18.0))
-                          ],
-                        ),
-                        Column(children: const [
-                          Text('Doručak', style: TextStyle(fontSize: 20.0))
-                        ]),
-                      ],
-                      decoration: const BoxDecoration(
-                          color: Color.fromRGBO(185, 104, 199, 1.0),
-                          borderRadius: BorderRadius.all(Radius.circular(7))),
-                    ),
-                    rowSpacer,
-                    TableRow(
-                      children: [
-                        Column(children: const [
-                          Text('10:00-11:00', style: TextStyle(fontSize: 20.0))
-                        ]),
-                        Column(children: const [
-                          Text('Izlazak iz soba',
-                              style: TextStyle(fontSize: 20.0))
-                        ]),
-                      ],
-                      decoration: const BoxDecoration(
-                          color: Color.fromRGBO(231, 187, 236, 1),
-                          borderRadius: BorderRadius.all(Radius.circular(7))),
-                    ),
-                    rowSpacer,
-                    TableRow(
-                      children: [
-                        Column(children: const [
-                          Text('11:00-16:00', style: TextStyle(fontSize: 20.0))
-                        ]),
-                        Column(children: const [
-                          Text('Slobodno vreme: Palić/Segedin',
-                              style: TextStyle(fontSize: 17.0))
-                        ]),
-                      ],
-                      decoration: const BoxDecoration(
-                          color: Color.fromRGBO(242, 228, 244, 1.0),
-                          borderRadius: BorderRadius.all(Radius.circular(7))),
-                    ),
-                    rowSpacer,
-                    TableRow(
-                      children: [
-                        Column(children: const [
-                          Text('16:00-18:30', style: TextStyle(fontSize: 20.0))
-                        ]),
-                        Column(children: const [
-                          Text('Dolazak kući', style: TextStyle(fontSize: 20.0))
-                        ]),
-                      ],
-                      decoration: const BoxDecoration(
-                          color: Color.fromRGBO(204, 159, 216, 1.0),
-                          borderRadius: BorderRadius.all(Radius.circular(7))),
-                    )
-                  ],
+                          ]),
+                          Column(children: const [
+                            Text('Izlazak iz soba',
+                                style: TextStyle(fontSize: 20.0))
+                          ]),
+                        ],
+                        decoration: const BoxDecoration(
+                            color: Color.fromRGBO(231, 187, 236, 1),
+                            borderRadius: BorderRadius.all(Radius.circular(7))),
+                      ),
+                      rowSpacer,
+                      TableRow(
+                        children: [
+                          Column(children: const [
+                            Text('11:00-16:00',
+                                style: TextStyle(fontSize: 18.0))
+                          ]),
+                          Column(children: const [
+                            Text('Slobodno vreme: Palić/Segedin',
+                                style: TextStyle(fontSize: 20.0))
+                          ]),
+                        ],
+                        decoration: const BoxDecoration(
+                            color: Color.fromRGBO(242, 228, 244, 1.0),
+                            borderRadius: BorderRadius.all(Radius.circular(7))),
+                      ),
+                      rowSpacer,
+                      TableRow(
+                        children: [
+                          Column(children: const [
+                            Text('16:00-18:30',
+                                style: TextStyle(fontSize: 18.0))
+                          ]),
+                          Column(children: const [
+                            Text('Dolazak kući',
+                                style: TextStyle(fontSize: 20.0))
+                          ]),
+                        ],
+                        decoration: const BoxDecoration(
+                            color: Color.fromRGBO(204, 159, 216, 1.0),
+                            borderRadius: BorderRadius.all(Radius.circular(7))),
+                      )
+                    ],
+                  ),
                 ),
               ),
             ]))
