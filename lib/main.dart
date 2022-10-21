@@ -26,6 +26,7 @@ import 'fragments/notificationPage.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+  await Future.delayed(const Duration(seconds: 3));
   runApp(const MyApp());
 }
 
