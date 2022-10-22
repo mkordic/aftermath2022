@@ -1,3 +1,6 @@
+import 'dart:ui';
+
+import 'package:aftermath/firebase_options.dart';
 import 'package:aftermath/fragments/mainThirdPage.dart';
 import 'package:aftermath/fragments/mapPage.dart';
 import 'package:aftermath/navigationDrawer/navigationDrawer.dart';
@@ -10,6 +13,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import'package:flutter_map/flutter_map.dart';
 import 'package:flutter/services.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 
 import 'fragments/agendaPage.dart';
 import 'fragments/agendaPages/day1.dart';
@@ -25,7 +29,8 @@ import 'fragments/notificationPage.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  FirebaseMessaging messaging = FirebaseMessaging.instance;
   await Future.delayed(const Duration(seconds: 3));
   runApp(const MyApp());
 }
@@ -47,6 +52,7 @@ class _MyAppState extends State<MyApp> {
       DeviceOrientation.portraitDown,
     ]);
     return MaterialApp(
+      scrollBehavior: AppScrollBehavior(),
       theme: ThemeData(
           primaryColor: Colors.purple,
           textTheme: GoogleFonts.montserratTextTheme(
@@ -145,4 +151,12 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
     );
   }
+}
+
+class AppScrollBehavior extends MaterialScrollBehavior {
+  @override
+  Set<PointerDeviceKind> get dragDevices => {
+    PointerDeviceKind.touch,
+    PointerDeviceKind.mouse,
+  };
 }
