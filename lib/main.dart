@@ -14,6 +14,7 @@ import 'package:flutter_native_splash/flutter_native_splash.dart';
 import'package:flutter_map/flutter_map.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:flutter/foundation.dart';
 
 import 'fragments/agendaPage.dart';
 import 'fragments/agendaPages/day1.dart';
@@ -39,20 +40,24 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   FirebaseMessaging messaging = FirebaseMessaging.instance;
-  NotificationSettings settings = await messaging.requestPermission(
-    alert: true,
-    announcement: false,
-    badge: true,
-    carPlay: false,
-    criticalAlert: false,
-    provisional: false,
-    sound: true,
-  );
-  print('User granted permission: ${settings.authorizationStatus}');
 
-  String? token = await messaging.getToken(
-    vapidKey: 'BF-y0ChGpSRl5HW1tqaSF3kBDYjlGrfD1CI1EY3arOmimWUoNeg7JEqV9F_0NlmJqgHx6l5o7UO_gsj3LVcGI9c'
-  );
+  String? token;
+  if (defaultTargetPlatform != TargetPlatform.iOS) {
+    NotificationSettings settings = await messaging.requestPermission(
+      alert: true,
+      announcement: false,
+      badge: true,
+      carPlay: false,
+      criticalAlert: false,
+      provisional: false,
+      sound: true,
+    );
+    print('User granted permission: ${settings.authorizationStatus}');
+
+    token = await messaging.getToken(
+        vapidKey:
+            'BF-y0ChGpSRl5HW1tqaSF3kBDYjlGrfD1CI1EY3arOmimWUoNeg7JEqV9F_0NlmJqgHx6l5o7UO_gsj3LVcGI9c');
+  }
 
   FirebaseMessaging.onMessage.listen((RemoteMessage message) {
     print('Got a message whilst in the foreground!');
