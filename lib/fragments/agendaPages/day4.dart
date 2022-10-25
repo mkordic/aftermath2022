@@ -116,16 +116,32 @@ class day4 extends StatelessWidget {
                       TableRow(
                         children: [
                           Column(children: const [
-                            Text('10:00-11:00',
+                            Text('10:00-10:45',
                                 style: TextStyle(fontSize: 18.0))
                           ]),
                           Column(children: const [
-                            Text('Slobodno vreme',
+                            Text('Predavanje kompanije',
                                 style: TextStyle(fontSize: 20.0))
                           ]),
                         ],
                         decoration: const BoxDecoration(
-                            color: Color.fromRGBO(204, 159, 216, 1.0),
+                            color: Color.fromRGBO(242, 228, 244, 1.0),
+                            borderRadius: BorderRadius.all(Radius.circular(7))),
+                      ),
+                      rowSpacer,
+                      TableRow(
+                        children: [
+                          Column(children: const [
+                            Text('10:45-11:00',
+                                style: TextStyle(fontSize: 18.0))
+                          ]),
+                          Column(children: const [
+                            Text('Pauza',
+                                style: TextStyle(fontSize: 20.0))
+                          ]),
+                        ],
+                        decoration: const BoxDecoration(
+                            color:  Color.fromRGBO(138, 78, 149, 1.0),
                             borderRadius: BorderRadius.all(Radius.circular(7))),
                       ),
                       rowSpacer,

@@ -100,12 +100,12 @@ class day5 extends StatelessWidget {
                         children: [
                           Column(
                             children: const [
-                              Text('08:00-10:00',
+                              Text('08:00-09:00',
                                   style: TextStyle(fontSize: 18.0))
                             ],
                           ),
                           Column(children: const [
-                            Text('Doručak', style: TextStyle(fontSize: 20.0))
+                            Text('Doručak i izlazak iz soba', style: TextStyle(fontSize: 20.0))
                           ]),
                         ],
                         decoration: const BoxDecoration(
@@ -113,26 +113,26 @@ class day5 extends StatelessWidget {
                             borderRadius: BorderRadius.all(Radius.circular(7))),
                       ),
                       rowSpacer,
+                      // TableRow(
+                      //   children: [
+                      //     Column(children: const [
+                      //       Text('10:00-11:00',
+                      //           style: TextStyle(fontSize: 18.0))
+                      //     ]),
+                      //     Column(children: const [
+                      //       Text('Izlazak iz soba',
+                      //           style: TextStyle(fontSize: 20.0))
+                      //     ]),
+                      //   ],
+                      //   decoration: const BoxDecoration(
+                      //       color: Color.fromRGBO(231, 187, 236, 1),
+                      //       borderRadius: BorderRadius.all(Radius.circular(7))),
+                      // ),
+                      // rowSpacer,
                       TableRow(
                         children: [
                           Column(children: const [
-                            Text('10:00-11:00',
-                                style: TextStyle(fontSize: 18.0))
-                          ]),
-                          Column(children: const [
-                            Text('Izlazak iz soba',
-                                style: TextStyle(fontSize: 20.0))
-                          ]),
-                        ],
-                        decoration: const BoxDecoration(
-                            color: Color.fromRGBO(231, 187, 236, 1),
-                            borderRadius: BorderRadius.all(Radius.circular(7))),
-                      ),
-                      rowSpacer,
-                      TableRow(
-                        children: [
-                          Column(children: const [
-                            Text('11:00-16:00',
+                            Text('09:15-17:00',
                                 style: TextStyle(fontSize: 18.0))
                           ]),
                           Column(children: const [
@@ -148,7 +148,7 @@ class day5 extends StatelessWidget {
                       TableRow(
                         children: [
                           Column(children: const [
-                            Text('16:00-18:30',
+                            Text('17:00-19:30',
                                 style: TextStyle(fontSize: 18.0))
                           ]),
                           Column(children: const [

@@ -164,7 +164,7 @@ class day1 extends StatelessWidget {
                       TableRow(
                         children: [
                           Column(children: const [
-                            Text('15:00-15:45',
+                            Text('15:00-16:00',
                                 style: TextStyle(
                                     fontSize: 18.0, color: Colors.black))
                           ]),
@@ -182,7 +182,7 @@ class day1 extends StatelessWidget {
                       TableRow(
                         children: [
                           Column(children: const [
-                            Text('15:45-16:00',
+                            Text('16:00-16:15',
                                 style: TextStyle(fontSize: 18.0))
                           ]),
                           Column(children: const [
@@ -197,7 +197,7 @@ class day1 extends StatelessWidget {
                       TableRow(
                         children: [
                           Column(children: const [
-                            Text('16:00-16:45',
+                            Text('16:15-17:00',
                                 style: TextStyle(
                                     fontSize: 18.0, color: Colors.black))
                           ]),
@@ -215,7 +215,7 @@ class day1 extends StatelessWidget {
                       TableRow(
                         children: [
                           Column(children: const [
-                            Text('16:45-17:00',
+                            Text('17:00-17:45',
                                 style: TextStyle(fontSize: 18.0))
                           ]),
                           Column(children: const [
@@ -230,7 +230,7 @@ class day1 extends StatelessWidget {
                       TableRow(
                         children: [
                           Column(children: const [
-                            Text('17:00-17:45',
+                            Text('17:45-18:30',
                                 style: TextStyle(
                                     fontSize: 18.0, color: Colors.black))
                           ]),
@@ -248,7 +248,7 @@ class day1 extends StatelessWidget {
                       TableRow(
                         children: [
                           Column(children: const [
-                            Text('17:45-19:00',
+                            Text('18:30-19:00',
                                 style: TextStyle(fontSize: 18.0))
                           ]),
                           Column(children: const [
