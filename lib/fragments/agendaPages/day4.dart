@@ -282,7 +282,7 @@ class day4 extends StatelessWidget {
                                 style: TextStyle(fontSize: 18.0))
                           ]),
                           Column(children: const [
-                            Text('Svecano zatvaranje',
+                            Text('Svečano zatvaranje',
                                 style: TextStyle(fontSize: 20.0))
                           ]),
                         ],
@@ -298,7 +298,7 @@ class day4 extends StatelessWidget {
                                 style: TextStyle(fontSize: 18.0))
                           ]),
                           Column(children: const [
-                            Text('Vecera', style: TextStyle(fontSize: 20.0))
+                            Text('Večera', style: TextStyle(fontSize: 20.0))
                           ]),
                         ],
                         decoration: const BoxDecoration(
@@ -313,7 +313,7 @@ class day4 extends StatelessWidget {
                                 style: TextStyle(fontSize: 18.0))
                           ]),
                           Column(children: const [
-                            Text('Zurka u klubu',
+                            Text('Žurka u klubu',
                                 style: TextStyle(fontSize: 20.0))
                           ]),
                         ],
