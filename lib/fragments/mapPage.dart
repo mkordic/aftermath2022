@@ -44,7 +44,7 @@ class mapPage extends StatelessWidget {
                               context: context,
                               builder: (context) => AlertDialog(
                                 title: const Text('Studentsko odmaralište "Palić "'),
-                                content: const Text('U okviru ovog kompleksa nalazi se vaš smeštaj kao i konferencijska sala u kojoj ce se održavati sva predavanja'),
+                                content: const Text('U okviru ovog kompleksa nalazi se vaš smeštaj kao i konferencijska sala u kojoj će se održavati sva predavanja.'),
                                 actions: [
                                   TextButton(
                                       onPressed: () => Navigator.pop(context),
@@ -157,7 +157,7 @@ class mapPage extends StatelessWidget {
                             context: context,
                             builder: (context) => AlertDialog(
                               title: const Text('Zoo vrt Palić'),
-                              content: const Text('Zoološki vrt Palić je jedan od četiri zoološka vrta u Srbiji, a površina na kojoj se prostire iznosi 15 hektara, od kojih je 10 hektara kultivisanog parkovskog prostora, dostupnog posetiocima. '),
+                              content: const Text('Zoološki vrt Palić je jedan od četiri zoološka vrta u Srbiji, a površina na kojoj se prostire iznosi 15 hektara, od kojih je 10 hektara kultivisanog parkovskog prostora, dostupnog posetiocima.'),
                               actions: [
                                 TextButton(
                                     onPressed: () => Navigator.pop(context),
