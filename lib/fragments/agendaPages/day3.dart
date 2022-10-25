@@ -314,7 +314,6 @@ class day3 extends StatelessWidget {
               ),
             ),
           ])),
-      //const Center(child: Text("AGENDA")));
     );
   }
 }

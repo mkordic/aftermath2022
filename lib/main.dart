@@ -32,8 +32,6 @@ Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   // If you're going to use other Firebase services in the background, such as Firestore,
   // make sure you call `initializeApp` before using other Firebase services.
   await Firebase.initializeApp();
-
-  print("Handling a background message: ${message.messageId}");
 }
 
 Future<void> main() async {
@@ -52,7 +50,6 @@ Future<void> main() async {
       provisional: false,
       sound: true,
     );
-    print('User granted permission: ${settings.authorizationStatus}');
 
     token = await messaging.getToken(
         vapidKey:
@@ -60,11 +57,10 @@ Future<void> main() async {
   }
 
   FirebaseMessaging.onMessage.listen((RemoteMessage message) {
-    print('Got a message whilst in the foreground!');
-    print('Message data: ${message.data}');
+
 
     if (message.notification != null) {
-      print('Message also contained a notification: ${message.notification}');
+
     }
   });
 
@@ -115,7 +111,6 @@ class _MyAppState extends State<MyApp> {
             future: _fbApp,
             builder: (context, snapshot) {
               if(snapshot.hasError) {
-                print('Ovde ima greske ${snapshot.error.toString()}');
                 return const Text("Nesto nije u redu");
               } else if(snapshot.hasData){
                 return const MyStatefulWidget();
@@ -175,7 +170,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   Widget build(BuildContext context) {
     final pageControler = PageController();
     if (_announcement == null){
-      print("Null je");
     }
     return PageView(
       controller: pageControler,
