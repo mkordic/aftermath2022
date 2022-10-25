@@ -190,7 +190,7 @@ class _notificationPageState extends State<notificationPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Text("Notifikacije"),
+          title: const Text("Obaveštenja"),
           backgroundColor: Colors.purple),
       drawer: navigationDrawer(),
       body: Container(

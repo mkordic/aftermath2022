@@ -33,7 +33,7 @@ class navigationDrawer extends StatelessWidget {
 
           createDrawerBodyItem(
               icon: Icons.notifications_active,
-              text: 'Notifikacije',
+              text: 'Obaveštenja',
               onTap: () =>
                 Navigator.pushReplacementNamed(context, pageRoutes.notification)
           ),

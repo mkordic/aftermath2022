@@ -109,7 +109,7 @@ class mainFirstPage extends StatelessWidget {
                           " koje možete posetiti u slobodno vreme \n"
                           "\t • U odeljku "),
                   TextSpan(
-                      text: "NOTIFIKACIJE",
+                      text: "OBAVEŠTENJA",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontStyle: FontStyle.italic)),
