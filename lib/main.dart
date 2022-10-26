@@ -88,7 +88,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       scrollBehavior: AppScrollBehavior(),
       theme: ThemeData(
-          primaryColor: Colors.purple,
+          primaryColor: const Color(0xff73529f),
           textTheme: GoogleFonts.montserratTextTheme(
               Theme.of(context).textTheme
           )

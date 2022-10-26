@@ -21,7 +21,7 @@ class day5 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title: const Text("Dan 5"), backgroundColor: Colors.purple),
+            title: const Text("Dan 5"), backgroundColor: const Color(0xff73529f)),
         drawer: navigationDrawer(),
         body: Container(
             decoration: const BoxDecoration(

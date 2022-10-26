@@ -12,7 +12,7 @@ class mainFirstPage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
             title: const Text("AfterMath"),
-            backgroundColor: Colors.purple),
+            backgroundColor: const Color(0xff73529f)),
         drawer: navigationDrawer(),
         body: Container(
             decoration: const BoxDecoration(

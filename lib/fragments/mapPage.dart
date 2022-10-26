@@ -13,7 +13,7 @@ class mapPage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: const Text("Mapa Palića"),
-          backgroundColor: Colors.purple,
+          backgroundColor: const Color(0xff73529f),
         ),
         drawer: navigationDrawer(),
         body: FlutterMap(

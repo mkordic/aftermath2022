@@ -14,7 +14,7 @@ class mainThirdPage extends StatelessWidget {
     return  Scaffold(
         appBar: AppBar(
             title: const Text("Srebrni sponzori"),
-            backgroundColor: Colors.purple),
+            backgroundColor: const Color(0xff73529f)),
         drawer: navigationDrawer(),
         body: Container(
             decoration: const BoxDecoration(

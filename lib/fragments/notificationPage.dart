@@ -191,7 +191,7 @@ class _notificationPageState extends State<notificationPage> {
     return Scaffold(
       appBar: AppBar(
           title: const Text("Obaveštenja"),
-          backgroundColor: Colors.purple),
+          backgroundColor: const Color(0xff73529f)),
       drawer: navigationDrawer(),
       body: Container(
         constraints: BoxConstraints.expand(),
