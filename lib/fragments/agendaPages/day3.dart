@@ -104,7 +104,7 @@ class day3 extends StatelessWidget {
                           ],
                         ),
                         Column(children: const [
-                          Text('Doručak', style: TextStyle(fontSize: 20.0))
+                          Text('Doručak', style: TextStyle(fontSize: 17.0))
                         ]),
                       ],
                       decoration: const BoxDecoration(
@@ -118,8 +118,12 @@ class day3 extends StatelessWidget {
                           Text('10:00-10:45', style: TextStyle(fontSize: 18.0))
                         ]),
                         Column(children: const [
-                          Text('Naučno predavanje',
-                              style: TextStyle(fontSize: 20.0))
+                          Text('Bojana Milošević',
+                              style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w700)),
+                          Text('Od ideje do naučno-istraživačkog rada',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontSize: 12.0, color: Colors.black))
                         ]),
                       ],
                       decoration: const BoxDecoration(
@@ -133,7 +137,7 @@ class day3 extends StatelessWidget {
                           Text('10:45-11:00', style: TextStyle(fontSize: 18.0))
                         ]),
                         Column(children: const [
-                          Text('Pauza', style: TextStyle(fontSize: 20.0))
+                          Text('Pauza', style: TextStyle(fontSize: 17.0))
                         ]),
                       ],
                       decoration: const BoxDecoration(
@@ -147,8 +151,12 @@ class day3 extends StatelessWidget {
                           Text('11:00-11:45', style: TextStyle(fontSize: 18.0))
                         ]),
                         Column(children: const [
-                          Text('Naučno predavanje',
-                              style: TextStyle(fontSize: 20.0))
+                          Text('Vladimir Đošović',
+                              style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w700)),
+                          Text('Dometi novih kosmičkih istraživanja',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontSize: 12.0, color: Colors.black))
                         ]),
                       ],
                       decoration: //BoxDecoration(color: Color.fromRGBO(223, 176, 211, 1),
@@ -165,7 +173,7 @@ class day3 extends StatelessWidget {
                         ]),
                         Column(children: const [
                           Text('Slobodno vreme',
-                              style: TextStyle(fontSize: 20.0))
+                              style: TextStyle(fontSize: 17.0))
                         ]),
                       ],
                       decoration: const BoxDecoration(
@@ -180,7 +188,7 @@ class day3 extends StatelessWidget {
                         ]),
                         Column(children: const [
                           Text('Simulacija intervjua',
-                              style: TextStyle(fontSize: 20.0))
+                              style: TextStyle(fontSize: 17.0))
                         ]),
                       ],
                       decoration: //BoxDecoration(color: Color.fromRGBO(228, 208, 237, 1),
@@ -197,7 +205,8 @@ class day3 extends StatelessWidget {
                         ]),
                         Column(children: const [
                           Text('Ručak i simulacija intervjua',
-                              style: TextStyle(fontSize: 20.0))
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontSize: 17.0))
                         ]),
                       ],
                       decoration: const BoxDecoration(
@@ -212,7 +221,7 @@ class day3 extends StatelessWidget {
                         ]),
                         Column(children: const [
                           Text('Slobodno vreme',
-                              style: TextStyle(fontSize: 20.0))
+                              style: TextStyle(fontSize: 17.0))
                         ]),
                       ],
                       decoration: //BoxDecoration(color: Color.fromRGBO(217, 131, 166, 1),
@@ -228,8 +237,12 @@ class day3 extends StatelessWidget {
                           Text('16:00-16:45', style: TextStyle(fontSize: 18.0))
                         ]),
                         Column(children: const [
-                          Text('Predavanje kompanije',
-                              style: TextStyle(fontSize: 20.0))
+                          Text('Mozzart',
+                              style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w700)),
+                          Text('Logistička regresija i njena potencijalna primena u aktivnosti igrača',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontSize: 12.0, color: Colors.black))
                         ]),
                       ],
                       decoration: const BoxDecoration(
@@ -243,7 +256,7 @@ class day3 extends StatelessWidget {
                           Text('16:45-17:00', style: TextStyle(fontSize: 18.0))
                         ]),
                         Column(children: const [
-                          Text('Pauza', style: TextStyle(fontSize: 20.0))
+                          Text('Pauza', style: TextStyle(fontSize: 17.0))
                         ]),
                       ],
                       decoration: const BoxDecoration(
@@ -257,8 +270,12 @@ class day3 extends StatelessWidget {
                           Text('17:00-17:45', style: TextStyle(fontSize: 18.0))
                         ]),
                         Column(children: const [
-                          Text('Predavanje kompanije',
-                              style: TextStyle(fontSize: 20.0))
+                          Text('Banca Intesa',
+                              style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w700)),
+                          Text('Primena matematike u bankarskoj industriji',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontSize: 12.0, color: Colors.black))
                         ]),
                       ],
                       decoration: const BoxDecoration(
@@ -273,7 +290,7 @@ class day3 extends StatelessWidget {
                         ]),
                         Column(children: const [
                           Text('Slobodno vreme',
-                              style: TextStyle(fontSize: 20.0))
+                              style: TextStyle(fontSize: 17.0))
                         ]),
                       ],
                       decoration: const BoxDecoration(
@@ -287,7 +304,7 @@ class day3 extends StatelessWidget {
                           Text('19:00-20:30', style: TextStyle(fontSize: 18.0))
                         ]),
                         Column(children: const [
-                          Text('Večera', style: TextStyle(fontSize: 20.0))
+                          Text('Večera', style: TextStyle(fontSize: 17.0))
                         ]),
                       ],
                       decoration: const BoxDecoration(
@@ -302,7 +319,7 @@ class day3 extends StatelessWidget {
                         ]),
                         Column(children: const [
                           Text('Zabavni program',
-                              style: TextStyle(fontSize: 20.0))
+                              style: TextStyle(fontSize: 17.0))
                         ]),
                       ],
                       decoration: const BoxDecoration(

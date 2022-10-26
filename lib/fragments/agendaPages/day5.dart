@@ -105,7 +105,7 @@ class day5 extends StatelessWidget {
                             ],
                           ),
                           Column(children: const [
-                            Text('Doručak i izlazak iz soba', style: TextStyle(fontSize: 20.0))
+                            Text('Doručak i izlazak iz soba', style: TextStyle(fontSize: 17.0))
                           ]),
                         ],
                         decoration: const BoxDecoration(
@@ -121,7 +121,7 @@ class day5 extends StatelessWidget {
                       //     ]),
                       //     Column(children: const [
                       //       Text('Izlazak iz soba',
-                      //           style: TextStyle(fontSize: 20.0))
+                      //           style: TextStyle(fontSize: 17.0))
                       //     ]),
                       //   ],
                       //   decoration: const BoxDecoration(
@@ -137,7 +137,7 @@ class day5 extends StatelessWidget {
                           ]),
                           Column(children: const [
                             Text('Slobodno vreme: Palić/Segedin',
-                                style: TextStyle(fontSize: 20.0))
+                                style: TextStyle(fontSize: 17.0))
                           ]),
                         ],
                         decoration: const BoxDecoration(
@@ -153,7 +153,7 @@ class day5 extends StatelessWidget {
                           ]),
                           Column(children: const [
                             Text('Dolazak kući',
-                                style: TextStyle(fontSize: 20.0))
+                                style: TextStyle(fontSize: 17.0))
                           ]),
                         ],
                         decoration: const BoxDecoration(
